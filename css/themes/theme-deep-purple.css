@@ -1,0 +1,45 @@
+﻿.theme-deep-purple .navbar {
+  background-color: #673AB7; }
+
+.theme-deep-purple .navbar-brand {
+  color: #fff; }
+  .theme-deep-purple .navbar-brand:hover {
+    color: #fff; }
+  .theme-deep-purple .navbar-brand:active {
+    color: #fff; }
+  .theme-deep-purple .navbar-brand:focus {
+    color: #fff; }
+
+.theme-deep-purple .nav > li > a {
+  color: #fff; }
+  .theme-deep-purple .nav > li > a:hover {
+    background-color: transparent; }
+  .theme-deep-purple .nav > li > a:focus {
+    background-color: transparent; }
+
+.theme-deep-purple .nav .open > a {
+  background-color: transparent; }
+  .theme-deep-purple .nav .open > a:hover {
+    background-color: transparent; }
+  .theme-deep-purple .nav .open > a:focus {
+    background-color: transparent; }
+
+.theme-deep-purple .bars {
+  color: #fff; }
+
+.theme-deep-purple .sidebar .menu .list li.active {
+  background-color: transparent; }
+  .theme-deep-purple .sidebar .menu .list li.active > :first-child i, .theme-deep-purple .sidebar .menu .list li.active > :first-child span {
+    color: #673AB7; }
+
+.theme-deep-purple .sidebar .menu .list .toggled {
+  background-color: transparent; }
+
+.theme-deep-purple .sidebar .menu .list .ml-menu {
+  background-color: transparent; }
+
+.theme-deep-purple .sidebar .legal {
+  background-color: #fff; }
+  .theme-deep-purple .sidebar .legal .copyright a {
+    color: #673AB7 !important; }
+

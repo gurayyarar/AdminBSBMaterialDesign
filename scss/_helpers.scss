@@ -1,0 +1,134 @@
+﻿//Margin
+@for $i from -25 through 25 {
+    .m-l-#{$i * 5} {
+        margin-left: #{$i * 5}px;
+    }
+
+    .m-t-#{$i * 5} {
+        margin-top: #{$i * 5}px;
+    }
+
+    .m-r-#{$i * 5} {
+        margin-right: #{$i * 5}px;
+    }
+
+    .m-b-#{$i * 5} {
+        margin-bottom: #{$i * 5}px;
+    }
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+@for $i from 0 through 25 {
+    .p-l-#{$i * 5} {
+        padding-left: #{$i * 5}px;
+    }
+
+    .p-t-#{$i * 5} {
+        padding-top: #{$i * 5}px;
+    }
+
+    .p-r-#{$i * 5} {
+        padding-right: #{$i * 5}px;
+    }
+
+    .p-b-#{$i * 5} {
+        padding-bottom: #{$i * 5}px;
+    }
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+@for $i from 5 through 49 {
+    .font-#{$i + 1} {
+        font-size: #{$i + 1}px;
+    }
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.no-resize {
+    resize: none;
+}
+
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-underline {
+    text-decoration: underline;
+}
+
+.font-line-through {
+    text-decoration: line-through;
+}
+
+.font-overline {
+    text-decoration: overline;
+}
+
+.block-header {
+    margin-bottom: 15px;
+
+    h2 {
+        margin: 0 !important;
+        color: #666 !important;
+        font-weight: normal;
+        font-size: 16px;
+
+        small {
+            display: block;
+            font-size: 12px;
+            margin-top: 8px;
+            color: #888;
+
+            a {
+                font-weight: bold;
+                color: #777;
+            }
+        }
+    }
+}
+
+@each $key, $val in $colors {
+    .bg-#{$key} {
+        background-color: $val !important;
+        color: #fff;
+
+        .content {
+            .text,
+            .number {
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+@each $key, $val in $colors {
+    .col-#{$key} {
+        color: $val !important;
+    }
+}

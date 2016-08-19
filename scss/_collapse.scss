@@ -1,0 +1,8 @@
+﻿.collapse,
+.collapse.in,
+.collapsing {
+    .well {
+        @include border-radius(0);
+        margin-bottom: 0;
+    }
+}

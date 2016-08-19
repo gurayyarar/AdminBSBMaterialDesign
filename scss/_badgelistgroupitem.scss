@@ -1,0 +1,126 @@
+﻿.badge {
+    @include border-radius(2px)
+}
+
+.list-group-item {
+    @include border-radius(0);
+    @include transition(.5s);
+}
+
+.list-group {
+    .active {
+        background-color: #2196F3;
+        border-color: #2196F3;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #2196F3;
+            border-color: #2196F3;
+        }
+
+        .list-group-item-text {
+            color: #dfe9f1;
+            font-size: 13px;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: #dfe9f1;
+            }
+        }
+    }
+
+    .list-group-item.active {
+        &:hover,
+        &:focus,
+        &:active {
+            .list-group-item-text {
+                color: #dfe9f1;
+            }
+        }
+    }
+
+    .list-group-item {
+        &:first-child,
+        &:last-child {
+            @include border-radius(0);
+        }
+
+        .list-group-item-heading {
+            font-weight: bold;
+            font-size: 17px;
+        }
+    }
+
+    .list-group-item-success {
+        background-color: #2b982b;
+        border: none;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            background-color: #2b982b;
+            color: #fff;
+            opacity: 0.8;
+        }
+    }
+
+    .list-group-item-info {
+        background-color: #00b0e4;
+        border: none;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            background-color: #00b0e4;
+            color: #fff;
+            opacity: 0.8;
+        }
+    }
+
+    .list-group-item-warning {
+        background-color: #ff9600;
+        border: none;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            background-color: #ff9600;
+            color: #fff;
+            opacity: 0.8;
+        }
+    }
+
+    .list-group-item-danger {
+        background-color: #fb483a;
+        border: none;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            background-color: #fb483a;
+            color: #fff;
+            opacity: 0.8;
+        }
+    }
+
+    @each $key, $val in $colors {
+        .pl-#{$key} {
+            stroke: $val;
+        }
+
+        .list-group-bg-#{$key} {
+            background-color: $val;
+            border: none;
+            color: #fff;
+
+            &:hover,
+            &:focus {
+                background-color: $val;
+                color: #fff;
+                opacity: 0.8;
+            }
+        }
+    }
+}

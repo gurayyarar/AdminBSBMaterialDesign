@@ -1,0 +1,23 @@
+﻿.sweet-alert {
+    @include border-radius(0 !important);
+
+    p {
+        font-size: 14px !important;
+    }
+
+    .sa-input-error {
+        top: 23px !important;
+        right: 13px !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+        margin: 0 0 5px 0 !important;
+    }
+
+    button {
+        font-size: 15px !important;
+        @include border-radius(0 !important);
+        padding: 5px 20px !important;
+    }
+}

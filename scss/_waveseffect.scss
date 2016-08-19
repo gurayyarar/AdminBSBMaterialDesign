@@ -1,0 +1,9 @@
+﻿.waves-effect {
+    @each $key, $val in $colors {
+        &.waves-#{$key} {
+            .waves-ripple {
+                background: rgba($val, 0.5);
+            }
+        }
+    }
+}

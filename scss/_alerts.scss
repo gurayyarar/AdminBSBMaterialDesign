@@ -1,0 +1,37 @@
+﻿.alert {
+    @include border-radius(0);
+    @include box-shadow(none);
+    border: none;
+    color: #fff !important;
+
+    .alert-link {
+        color: #fff;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+.alert-success {
+    background-color: #2b982b;
+}
+
+.alert-info {
+    background-color: #00b0e4;
+}
+
+.alert-warning {
+    background-color: #ff9600 !important;
+}
+
+.alert-danger {
+    background-color: #fb483a !important;
+}
+
+.alert-dismissible {
+    .close {
+        color: #fff;
+        opacity: 1;
+        border: none;
+        text-shadow: none;
+    }
+}

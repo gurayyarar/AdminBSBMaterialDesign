@@ -1,0 +1,92 @@
+﻿@import '_theme-color-variables';
+
+.theme-orange {
+
+    .navbar {
+        background-color: $theme-orange;
+    }
+
+    .navbar-brand {
+        color: $theme-orange-navbar-brand;
+
+        &:hover {
+            color: $theme-orange-navbar-brand_hover;
+        }
+
+        &:active {
+            color: $theme-orange-navbar-brand_active;
+        }
+
+        &:focus {
+            color: $theme-orange-navbar-brand_focus;
+        }
+    }
+
+    .nav {
+        > li {
+            > a {
+                color: $theme-orange-nav-anchor;
+
+                &:hover {
+                    background-color: $theme-orange-nav-anchor_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-orange-nav-anchor_focus;
+                }
+            }
+        }
+
+        .open {
+            > a {
+                background-color: $theme-orange-nav-anchor-opened;
+
+                &:hover {
+                    background-color: $theme-orange-nav-anchor-opened_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-orange-nav-anchor-opened_focus;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color: $theme-orange-bar;
+    }
+
+    .sidebar {
+        .menu {
+            .list {
+                li.active {
+                    background-color: $theme-orange-menu-list-active;
+
+                    > :first-child {
+                        i, span {
+                            color: $theme-orange;
+                        }
+                    }
+                }
+
+                .toggled {
+                    background-color: $theme-orange-menu-list-toggled;
+                }
+
+                .ml-menu {
+                    background-color: $theme-orange-menu-list-submenu;
+                }
+            }
+        }
+
+        .legal {
+            background-color: $theme-orange-legal-bg;
+
+            .copyright {
+                a {
+                    color: $theme-orange !important;
+                }
+            }
+        }
+    }
+}

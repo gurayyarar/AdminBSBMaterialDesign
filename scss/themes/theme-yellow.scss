@@ -1,0 +1,92 @@
+﻿@import '_theme-color-variables';
+
+.theme-yellow {
+
+    .navbar {
+        background-color: $theme-yellow;
+    }
+
+    .navbar-brand {
+        color: $theme-yellow-navbar-brand;
+
+        &:hover {
+            color: $theme-yellow-navbar-brand_hover;
+        }
+
+        &:active {
+            color: $theme-yellow-navbar-brand_active;
+        }
+
+        &:focus {
+            color: $theme-yellow-navbar-brand_focus;
+        }
+    }
+
+    .nav {
+        > li {
+            > a {
+                color: $theme-yellow-nav-anchor;
+
+                &:hover {
+                    background-color: $theme-yellow-nav-anchor_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-yellow-nav-anchor_focus;
+                }
+            }
+        }
+
+        .open {
+            > a {
+                background-color: $theme-yellow-nav-anchor-opened;
+
+                &:hover {
+                    background-color: $theme-yellow-nav-anchor-opened_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-yellow-nav-anchor-opened_focus;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color: $theme-yellow-bar;
+    }
+
+    .sidebar {
+        .menu {
+            .list {
+                li.active {
+                    background-color: $theme-yellow-menu-list-active;
+
+                    > :first-child {
+                        i, span {
+                            color: $theme-yellow;
+                        }
+                    }
+                }
+
+                .toggled {
+                    background-color: $theme-yellow-menu-list-toggled;
+                }
+
+                .ml-menu {
+                    background-color: $theme-yellow-menu-list-submenu;
+                }
+            }
+        }
+
+        .legal {
+            background-color: $theme-yellow-legal-bg;
+
+            .copyright {
+                a {
+                    color: $theme-yellow !important;
+                }
+            }
+        }
+    }
+}

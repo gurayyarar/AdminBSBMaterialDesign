@@ -1,0 +1,46 @@
+﻿body {
+    background-color: #e9e9e9;
+    @include transition(all .5s);
+    font-family: 'Roboto', Arial, Tahoma, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+button,
+input,
+select,
+a {
+    outline: none !important;
+}
+
+.no-animate {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+}
+
+section {
+    &.content {
+        margin: 100px 15px 0 315px;
+        @include transition(.5s);
+    }
+}

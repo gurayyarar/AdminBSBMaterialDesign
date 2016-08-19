@@ -1,0 +1,8 @@
+﻿.colorpicker {
+    z-index: 1;
+
+    &:before,
+    &:after {
+        display: none !important;
+    }
+}

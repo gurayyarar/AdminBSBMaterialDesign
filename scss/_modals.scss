@@ -1,0 +1,51 @@
+﻿.modal {
+    .modal-header {
+        border: none;
+        padding: 25px 25px 5px 25px;
+
+        .modal-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+
+    .modal-content {
+        @include border-radius(0);
+        box-shadow: 0 5px 20px rgba(0,0,0,.31) !important;
+        border: none;
+
+        .modal-body {
+            color: #777;
+            padding: 15px 25px;
+        }
+    }
+
+    .modal-footer {
+        border: none;
+    }
+}
+
+@each $key, $val in $colors {
+    .modal-col-#{$key} {
+        background-color: $val;
+
+        .modal-body,
+        .modal-title {
+            color: #fff !important;
+        }
+
+        .modal-footer {
+            background-color: rgba(0,0,0,0.12);
+
+            .btn-link {
+                color: #fff !important;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: rgba(0,0,0,0.12);
+                }
+            }
+        }
+    }
+}

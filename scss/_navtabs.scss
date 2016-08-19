@@ -1,0 +1,71 @@
+﻿.nav-tabs {
+    border-bottom: 2px solid #eee;
+
+    > li {
+        position: relative;
+        top: 3px;
+        left: -2px;
+
+        > a {
+            border: none !important;
+            color: #999 !important;
+            @include border-radius(0);
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: transparent !important;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 0;
+                border-bottom: 2px solid #2196F3;
+                bottom: 2px;
+                @include transform(scaleX(0));
+                @include transition(0.1s ease-in);
+            }
+
+            .material-icons {
+                position: relative;
+                top: 7px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    li.active {
+        a {
+            color: #222 !important;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: transparent !important;
+            }
+
+            &:before {
+                @include transform(scaleX(1));
+            }
+        }
+    }
+
+    + .tab-content {
+        padding: 15px 0;
+    }
+}
+
+@each $key, $val in $colors {
+    .nav-tabs.tab-col-#{$key} {
+        > li {
+            > a {
+                &:before {
+                    border-bottom: 2px solid $val;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.navbar {
+    font-family: $navbar-font-family;
+    @include border-radius(0);
+    @include box-shadow(0 1px 5px rgba(0,0,0,.3));
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+
+    .navbar-brand {
+        @include three-dots-overflow();
+    }
+
+    .navbar-custom-right-menu {
+        float: right;
+    }
+
+    .navbar-toggle {
+        text-decoration: none;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        margin-top: -4px;
+        margin-right: 17px;
+
+        &:before {
+            content: '\E8D5';
+            font-family: 'Material Icons';
+            font-size: 26px;
+        }
+    }
+
+    .navbar-collapse {
+        &.in {
+            overflow: visible;
+        }
+    }
+}
+
+.ls-closed {
+    .sidebar {
+        margin-left: -300px;
+    }
+
+    section.content {
+        margin-left: 15px;
+    }
+
+    .bars {
+        &:after,
+        &:before {
+            font-family: 'Material Icons';
+            font-size: 24px;
+            position: absolute;
+            top: 18px;
+            left: 20px;
+            margin-right: 10px;
+            @include transform(scale(0));
+            @include transition(all .3s);
+        }
+
+        &:before {
+            content: '\E5D2';
+            @include transform(scale(1));
+        }
+
+        &:after {
+            content: '\E5C4';
+            @include transform(scale(0));
+        }
+    }
+
+    .navbar-brand {
+        margin-left: 30px;
+    }
+}
+
+.overlay-open {
+    .bars {
+        &:before {
+            @include transform(scale(0));
+        }
+
+        &:after {
+            @include transform(scale(1));
+        }
+    }
+}
+
+.navbar-header {
+    padding: 10px 7px;
+
+    .bars {
+        float: left;
+        text-decoration: none;
+    }
+}
+
+.navbar-nav {
+    > li {
+        > a {
+            padding: 7px 7px 2px 7px;
+            margin-top: 17px;
+            margin-left: 5px;
+        }
+    }
+
+    .dropdown-menu {
+        margin-top: -40px !important;
+    }
+}
+
+.label-count {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    font-size: 10px;
+    line-height: 15px;
+    background-color: #000;
+    padding: 0 4px;
+    @include border-radius(3px);
+}
+
+@each $key, $val in $colors {
+    .col-#{$key} {
+        .navbar {
+            @include navbar-link-color(#fff, #000, .95);
+            // @include navbar-link-color(rgba(0,0,0,0.85), #000, .95);
+        }
+    }
+}

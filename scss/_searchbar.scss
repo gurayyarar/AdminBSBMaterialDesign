@@ -1,0 +1,48 @@
+﻿.search-bar {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    @include transition(.25s);
+
+    &.open {
+        top: 0;
+    }
+
+    .search-icon {
+        position: absolute;
+        top: 20px;
+        left: 14px;
+
+        .material-icons {
+            font-size: 32px;
+            color: #999;
+        }
+    }
+
+    .close-search {
+        position: absolute;
+        cursor: pointer;
+        font-size: 30px;
+        top: 16px;
+        right: 18px;
+
+        .material-icons {
+            color: #999;
+            opacity: 1;
+            @include transition(.5s);
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 16px;
+        padding: 25px 60px 23px 56px;
+        border: none;
+    }
+}

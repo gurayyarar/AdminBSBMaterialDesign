@@ -1,0 +1,115 @@
+﻿[type="checkbox"] {
+    + label {
+        padding-left: 26px;
+        height: 25px;
+        line-height: 21px;
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    &:checked {
+        + label {
+            &:before {
+                top: -4px;
+                left: -2px;
+                width: 11px;
+                height: 19px;
+            }
+        }
+    }
+
+    @each $key, $val in $colors {
+        &:checked.chk-col-#{$key} {
+            + label {
+                &:before {
+                    border-right: 2px solid $val;
+                    border-bottom: 2px solid $val;
+                }
+            }
+        }
+    }
+}
+
+[type="checkbox"].filled-in {
+    &:checked {
+        + label {
+            &:after {
+                top: 0;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #26a69a;
+                background-color: #26a69a;
+                z-index: 0;
+            }
+
+            &:before {
+                border-right: 2px solid #fff !important;
+                border-bottom: 2px solid #fff !important;
+            }
+        }
+    }
+
+    @each $key, $val in $colors {
+        &:checked.chk-col-#{$key} {
+            + label {
+                &:after {
+                    border: 2px solid $val;
+                    background-color: $val;
+                }
+            }
+        }
+    }
+}
+
+[type="radio"] {
+    &:not(:checked) {
+        + label {
+            padding-left: 26px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 13px;
+            font-weight: normal;
+        }
+    }
+
+    &:checked {
+        + label {
+            padding-left: 26px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 13px;
+            font-weight: normal;
+        }
+    }
+}
+
+@each $key, $val in $colors {
+    [type="radio"].radio-col-#{$key} {
+        &:checked {
+            + label {
+                &:after {
+                    background-color: $val;
+                    border-color: $val;
+                }
+            }
+        }
+    }
+}
+
+
+@each $key, $val in $colors {
+    [type="radio"].with-gap.radio-col-#{$key} {
+        &:checked {
+            + label {
+                &:before {
+                    border: 2px solid $val;
+                }
+
+                &:after {
+                    background-color: $val;
+                    border: 2px solid $val;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,432 @@
+﻿.info-box {
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    height: 80px;
+    display: flex;
+    cursor: default;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .icon {
+        display: inline-block;
+        text-align: center;
+        background-color: rgba(0,0,0,0.12);
+        width: 80px;
+
+        i {
+            color: #fff;
+            font-size: 50px;
+            line-height: 80px;
+        }
+
+        .chart.chart-bar {
+            height: 100%;
+            line-height: 100px;
+
+            canvas {
+                vertical-align: baseline !important;
+            }
+        }
+
+        .chart.chart-pie {
+            height: 100%;
+            line-height: 123px;
+
+            canvas {
+                vertical-align: baseline !important;
+            }
+        }
+
+        .chart.chart-line {
+            height: 100%;
+            line-height: 115px;
+
+            canvas {
+                vertical-align: baseline !important;
+            }
+        }
+    }
+
+    .content {
+        display: inline-block;
+        padding: 7px 10px;
+
+        .text {
+            font-size: 13px;
+            margin-top: 11px;
+            color: #555;
+        }
+
+        .number {
+            font-weight: normal;
+            font-size: 26px;
+            margin-top: -4px;
+            color: #555;
+        }
+    }
+}
+
+.info-box.hover-zoom-effect {
+    .icon {
+        overflow: hidden;
+
+        i {
+            @include transition(all .3s ease);
+        }
+    }
+
+    &:hover {
+        .icon {
+            i {
+                opacity: 0.4;
+                @include transform(rotate(-32deg) scale(1.4));
+            }
+        }
+    }
+}
+
+.info-box.hover-expand-effect {
+    &:after {
+        background-color: rgba(0,0,0,0.05);
+        content: ".";
+        position: absolute;
+        left: 80px;
+        top: 0;
+        width: 0;
+        height: 100%;
+        color: transparent;
+        @include transition(all .95s);
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.info-box-2 {
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    height: 80px;
+    display: flex;
+    cursor: default;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .icon {
+        display: inline-block;
+        text-align: center;
+        width: 80px;
+
+        i {
+            color: #fff;
+            font-size: 50px;
+            line-height: 80px;
+        }
+    }
+
+    .chart.chart-bar {
+        height: 100%;
+        line-height: 105px;
+
+        canvas {
+            vertical-align: baseline !important;
+        }
+    }
+
+    .chart.chart-pie {
+        height: 100%;
+        line-height: 123px;
+
+        canvas {
+            vertical-align: baseline !important;
+        }
+    }
+
+    .chart.chart-line {
+        height: 100%;
+        line-height: 115px;
+
+        canvas {
+            vertical-align: baseline !important;
+        }
+    }
+
+    .content {
+        display: inline-block;
+        padding: 7px 10px;
+
+        .text {
+            font-size: 13px;
+            margin-top: 11px;
+            color: #555;
+        }
+
+        .number {
+            font-weight: normal;
+            font-size: 26px;
+            margin-top: -4px;
+            color: #555;
+        }
+    }
+}
+
+.info-box-2.hover-zoom-effect {
+    .icon {
+        overflow: hidden;
+
+        i {
+            @include transition(all .3s ease);
+        }
+    }
+
+    &:hover {
+        .icon {
+            i {
+                opacity: 0.4;
+                @include transform(rotate(-32deg) scale(1.4));
+            }
+        }
+    }
+}
+
+.info-box-2.hover-expand-effect {
+    &:after {
+        background-color: rgba(0,0,0,0.05);
+        content: ".";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        color: transparent;
+        @include transition(all .95s);
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.info-box-3 {
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    height: 80px;
+    display: flex;
+    cursor: default;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .icon {
+        position: absolute;
+        right: 10px;
+        bottom: 2px;
+        text-align: center;
+
+        i {
+            color: rgba(0,0,0,0.15);
+            font-size: 60px;
+        }
+    }
+
+    .chart {
+        margin-right: 5px;
+    }
+
+    .chart.chart-bar {
+        height: 100%;
+        line-height: 50px;
+
+        canvas {
+            vertical-align: baseline !important;
+        }
+    }
+
+    .chart.chart-pie {
+        height: 100%;
+        line-height: 34px;
+
+        canvas {
+            vertical-align: baseline !important;
+        }
+    }
+
+    .chart.chart-line {
+        height: 100%;
+        line-height: 40px;
+
+        canvas {
+            vertical-align: baseline !important;
+        }
+    }
+
+    .content {
+        display: inline-block;
+        padding: 7px 16px;
+
+        .text {
+            font-size: 13px;
+            margin-top: 11px;
+            color: #555;
+        }
+
+        .number {
+            font-weight: normal;
+            font-size: 26px;
+            margin-top: -4px;
+            color: #555;
+        }
+    }
+}
+
+.info-box-3.hover-zoom-effect {
+    .icon {
+        i {
+            @include transition(all .3s ease);
+        }
+    }
+
+    &:hover {
+        .icon {
+            i {
+                opacity: 0.4;
+                @include transform(rotate(-32deg) scale(1.4));
+            }
+        }
+    }
+}
+
+.info-box-3.hover-expand-effect {
+    &:after {
+        background-color: rgba(0,0,0,0.05);
+        content: ".";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        color: transparent;
+        @include transition(all .95s);
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.info-box-4 {
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    height: 80px;
+    display: flex;
+    cursor: default;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .icon {
+        position: absolute;
+        right: 10px;
+        bottom: 2px;
+        text-align: center;
+
+        i {
+            color: rgba(0,0,0,0.15);
+            font-size: 60px;
+        }
+    }
+
+    .chart {
+        margin-right: 5px;
+    }
+
+    .chart.chart-bar {
+        height: 100%;
+        line-height: 50px;
+
+        canvas {
+            vertical-align: baseline !important;
+        }
+    }
+
+    .chart.chart-pie {
+        height: 100%;
+        line-height: 34px;
+
+        canvas {
+            vertical-align: baseline !important;
+        }
+    }
+
+    .chart.chart-line {
+        height: 100%;
+        line-height: 40px;
+
+        canvas {
+            vertical-align: baseline !important;
+        }
+    }
+
+    .content {
+        display: inline-block;
+        padding: 7px 16px;
+
+        .text {
+            font-size: 13px;
+            margin-top: 11px;
+            color: #555;
+        }
+
+        .number {
+            font-weight: normal;
+            font-size: 26px;
+            margin-top: -4px;
+            color: #555;
+        }
+    }
+}
+
+.info-box-4.hover-zoom-effect {
+    .icon {
+        i {
+            @include transition(all .3s ease);
+        }
+    }
+
+    &:hover {
+        .icon {
+            i {
+                opacity: 0.4;
+                @include transform(rotate(-32deg) scale(1.4));
+            }
+        }
+    }
+}
+
+.info-box-4.hover-expand-effect {
+    &:after {
+        background-color: rgba(0,0,0,0.05);
+        content: ".";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        color: transparent;
+        @include transition(all .95s);
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}

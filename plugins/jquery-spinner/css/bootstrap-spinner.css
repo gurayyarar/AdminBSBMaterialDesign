@@ -1,0 +1,61 @@
+.spinner.input-group .input-group-addon .spin-up,
+.spinner.input-group .input-group-addon .spin-down {
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  color: #999;
+}
+.spinner.input-group .input-group-addon .spin-up:hover,
+.spinner.input-group .input-group-addon .spin-down:hover {
+  color: #555;
+}
+.spinner.input-group .input-group-addon .spin-up .fa,
+.spinner.input-group .input-group-addon .spin-down .fa {
+  margin-top: -8px;
+  vertical-align: middle;
+}
+.spinner.input-group .input-group-addon .spin-up .glyphicon,
+.spinner.input-group .input-group-addon .spin-down .glyphicon {
+  font-size: 10px;
+  top: -2px;
+}
+.spinner.input-group .input-group-addon a.spin-up,
+.spinner.input-group .input-group-addon a.spin-down {
+  text-decoration: none;
+}
+.spinner.input-group .input-group-addon button.spin-up,
+.spinner.input-group .input-group-addon button.spin-down {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.spinner.input-group.input-group-sm .input-group-addon .spin-up,
+.spinner.input-group.input-group-sm .input-group-addon .spin-down {
+  height: 8px;
+}
+.spinner.input-group.input-group-sm .input-group-addon .spin-up .fa,
+.spinner.input-group.input-group-sm .input-group-addon .spin-down .fa {
+  margin-top: -12px;
+}
+.spinner.input-group.input-group-sm .input-group-addon .spin-up .glyphicon,
+.spinner.input-group.input-group-sm .input-group-addon .spin-down .glyphicon {
+  font-size: 8px;
+  top: -5px;
+}
+.spinner.input-group.input-group-lg .input-group-addon .spin-up,
+.spinner.input-group.input-group-lg .input-group-addon .spin-down {
+  height: 12px;
+  width: 12px;
+}
+.spinner.input-group.input-group-lg .input-group-addon .spin-up .fa,
+.spinner.input-group.input-group-lg .input-group-addon .spin-down .fa {
+  margin-top: -16px;
+}
+.spinner.input-group.input-group-lg .input-group-addon .spin-up .glyphicon,
+.spinner.input-group.input-group-lg .input-group-addon .spin-down .glyphicon {
+  font-size: 12px;
+  top: -6px;
+}
+/*# sourceMappingURL=bootstrap-spinner.css.map */

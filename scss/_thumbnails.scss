@@ -1,0 +1,13 @@
+﻿.thumbnail {
+    @include border-radius(0);
+
+    p:not(button) {
+        color: #999999;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+}

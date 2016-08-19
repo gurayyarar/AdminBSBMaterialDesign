@@ -1,0 +1,45 @@
+﻿.theme-green .navbar {
+  background-color: #4CAF50; }
+
+.theme-green .navbar-brand {
+  color: #fff; }
+  .theme-green .navbar-brand:hover {
+    color: #fff; }
+  .theme-green .navbar-brand:active {
+    color: #fff; }
+  .theme-green .navbar-brand:focus {
+    color: #fff; }
+
+.theme-green .nav > li > a {
+  color: #fff; }
+  .theme-green .nav > li > a:hover {
+    background-color: transparent; }
+  .theme-green .nav > li > a:focus {
+    background-color: transparent; }
+
+.theme-green .nav .open > a {
+  background-color: transparent; }
+  .theme-green .nav .open > a:hover {
+    background-color: transparent; }
+  .theme-green .nav .open > a:focus {
+    background-color: transparent; }
+
+.theme-green .bars {
+  color: #fff; }
+
+.theme-green .sidebar .menu .list li.active {
+  background-color: transparent; }
+  .theme-green .sidebar .menu .list li.active > :first-child i, .theme-green .sidebar .menu .list li.active > :first-child span {
+    color: #4CAF50; }
+
+.theme-green .sidebar .menu .list .toggled {
+  background-color: transparent; }
+
+.theme-green .sidebar .menu .list .ml-menu {
+  background-color: transparent; }
+
+.theme-green .sidebar .legal {
+  background-color: #fff; }
+  .theme-green .sidebar .legal .copyright a {
+    color: #4CAF50 !important; }
+

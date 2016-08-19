@@ -1,0 +1,77 @@
+﻿.bootstrap-select {
+    box-shadow: none !important;
+    border-bottom: 1px solid #ddd !important;
+    @include border-radius(0);
+
+    .dropdown-toggle {
+        &:focus,
+        &:active {
+            outline: none !important;
+        }
+    }
+
+    .bs-searchbox,
+    .bs-actionsbox,
+    .bs-donebutton {
+        padding: 0 0 5px 0;
+        border-bottom: 1px solid #e9e9e9;
+
+        .form-control {
+            @include border-radius(0);
+            @include box-shadow(none !important);
+            border: none;
+            margin-left: 30px;
+        }
+    }
+
+    .bs-searchbox {
+        position: relative;
+
+        &:after {
+            content: '\E8B6';
+            font-family: 'Material Icons';
+            position: absolute;
+            top: 0;
+            left: 10px;
+            font-size: 25px;
+        }
+    }
+
+    ul.dropdown-menu {
+        margin-top: 0 !important;
+    }
+
+    .dropdown-menu {
+        li.selected {
+            a {
+                background-color: #eee !important;
+                color: #555 !important;
+            }
+        }
+
+        .active {
+            a {
+                background-color: transparent;
+                color: #333 !important;
+            }
+        }
+
+        .notify {
+            background-color: #F44336 !important;
+            color: #fff !important;
+            border: none !important;
+        }
+    }
+}
+
+.bootstrap-select.btn-group.show-tick {
+    .dropdown-menu {
+        li.selected {
+            a {
+                span.check-mark {
+                    margin-top: 9px;
+                }
+            }
+        }
+    }
+}

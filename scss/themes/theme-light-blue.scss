@@ -1,0 +1,92 @@
+﻿@import '_theme-color-variables';
+
+.theme-light-blue {
+
+    .navbar {
+        background-color: $theme-light-blue;
+    }
+
+    .navbar-brand {
+        color: $theme-light-blue-navbar-brand;
+
+        &:hover {
+            color: $theme-light-blue-navbar-brand_hover;
+        }
+
+        &:active {
+            color: $theme-light-blue-navbar-brand_active;
+        }
+
+        &:focus {
+            color: $theme-light-blue-navbar-brand_focus;
+        }
+    }
+
+    .nav {
+        > li {
+            > a {
+                color: $theme-light-blue-nav-anchor;
+
+                &:hover {
+                    background-color: $theme-light-blue-nav-anchor_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-light-blue-nav-anchor_focus;
+                }
+            }
+        }
+
+        .open {
+            > a {
+                background-color: $theme-light-blue-nav-anchor-opened;
+
+                &:hover {
+                    background-color: $theme-light-blue-nav-anchor-opened_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-light-blue-nav-anchor-opened_focus;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color: $theme-light-blue-bar;
+    }
+
+    .sidebar {
+        .menu {
+            .list {
+                li.active {
+                    background-color: $theme-light-blue-menu-list-active;
+
+                    > :first-child {
+                        i, span {
+                            color: $theme-light-blue;
+                        }
+                    }
+                }
+
+                .toggled {
+                    background-color: $theme-light-blue-menu-list-toggled;
+                }
+
+                .ml-menu {
+                    background-color: $theme-light-blue-menu-list-submenu;
+                }
+            }
+        }
+
+        .legal {
+            background-color: $theme-light-blue-legal-bg;
+
+            .copyright {
+                a {
+                    color: $theme-light-blue !important;
+                }
+            }
+        }
+    }
+}

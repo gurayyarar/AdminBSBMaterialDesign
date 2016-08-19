@@ -1,0 +1,27 @@
+﻿.md-preloader {
+    @each $key, $val in $colors {
+        .pl-#{$key} {
+            stroke: $val;
+        }
+    }
+
+    &.pl-size-xl {
+        width: 75px;
+    }
+
+    &.pl-size-l {
+        width: 60px;
+    }
+
+    &.pl-size-md {
+        width: 50px;
+    }
+
+    &.pl-size-sm {
+        width: 40px;
+    }
+
+    &.pl-size-xs {
+        width: 25px;
+    }
+}

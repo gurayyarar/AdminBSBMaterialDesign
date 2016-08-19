@@ -1,0 +1,9 @@
+﻿.irs {
+    .irs-min,
+    .irs-max,
+    .irs-from,
+    .irs-to,
+    .irs-single {
+        @include border-radius(0);
+    }
+}

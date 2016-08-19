@@ -1,0 +1,40 @@
+﻿/* Morris */
+.morris-hover {
+    &.morris-default-style {
+        @include border-radius(0);
+    }
+}
+
+/* Flot */
+.flot-chart {
+    width: 100%;
+    height: 320px;
+}
+
+.panel-switch-btn {
+    position: relative;
+    top: -20px;
+    right: 20px;
+    z-index: 9;
+
+    label {
+        font-weight: bold !important;
+    }
+}
+
+.legendLabel {
+    width: 85px !important;
+    position: relative;
+    left: 3px;
+}
+
+#multiple_axis_chart {
+    .legendLabel {
+        width: 160px !important;
+    }
+}
+
+/* Sparkline */
+.sparkline {
+    text-align: center;
+}

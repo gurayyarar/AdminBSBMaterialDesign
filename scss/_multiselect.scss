@@ -1,0 +1,31 @@
+﻿.ms-container {
+    width: auto !important;
+
+    .ms-list {
+        @include box-shadow(none !important);
+        @include border-radius(0 !important);
+    }
+
+    .ms-list.ms-focus {
+        @include box-shadow(none !important);
+    }
+
+    .ms-selectable,
+    .ms-selection {
+        min-width: 250px !important;
+
+        li.ms-hover {
+            color: #000000 !important;
+            background-color: #e6e6e6 !important;
+        }
+
+        li.ms-elem-selectable,
+        li.ms-elem-selection {
+            padding: 9px 15px 6px 15px !important;
+        }
+    }
+
+    .ms-optgroup-label {
+        padding: 5px 0 0 8px !important;
+    }
+}

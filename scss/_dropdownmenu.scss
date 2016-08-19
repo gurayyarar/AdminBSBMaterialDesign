@@ -1,0 +1,141 @@
+﻿.dropdown-menu {
+    @include border-radius(0);
+    margin-top: -35px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    border: none;
+
+    .divider {
+        margin: 5px 0;
+    }
+
+    .header {
+        font-size: 13px;
+        font-weight: bold;
+        min-width: 270px;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+        padding: 4px 0 6px 0;
+    }
+
+    ul.menu {
+        padding-left: 0;
+
+        &.tasks {
+            h4 {
+                color: #333;
+                font-size: 13px;
+                margin: 0 0 8px 0;
+
+                small {
+                    float: right;
+                    margin-top: 6px;
+                }
+            }
+
+            .progress {
+                height: 7px;
+                margin-bottom: 7px;
+            }
+        }
+
+        .icon-circle {
+            width: 36px;
+            height: 36px;
+            @include border-radius(50%);
+            color: #fff;
+            text-align: center;
+            display: inline-block;
+
+            i {
+                font-size: 18px;
+                line-height: 36px;
+            }
+        }
+
+        li {
+            border-bottom: 1px solid #eee;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            a {
+                padding: 7px 11px;
+                text-decoration: none;
+                @include transition(.5s);
+
+                &:hover {
+                    background-color: #e9e9e9;
+                }
+            }
+        }
+
+        .menu-info {
+            display: inline-block;
+            position: relative;
+            top: 3px;
+            left: 5px;
+
+            h4 {
+                margin: 0;
+                font-size: 13px;
+                color: #333;
+            }
+
+            p {
+                margin: 0;
+                font-size: 11px;
+                color: #aaa;
+
+                .material-icons {
+                    font-size: 13px;
+                    color: #aaa;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        a {
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding: 5px 0 5px 0;
+            font-size: 12px;
+            margin-bottom: -5px;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+    > li {
+        > a {
+            padding: 7px 18px;
+            color: #666;
+            @include transition(all .5s);
+            font-size: 14px;
+            line-height: 25px;
+
+            &:hover {
+                background-color: rgba(0,0,0,0.075);
+            }
+
+            i.material-icons {
+                float: left;
+                margin-right: 7px;
+                margin-top: 2px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.dropdown-animated {
+    -webkit-animation-duration: .3s !important;
+    -moz-animation-duration: .3s !important;
+    -o-animation-duration: .3s !important;
+    animation-duration: .3s !important;
+}

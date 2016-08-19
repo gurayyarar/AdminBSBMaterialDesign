@@ -1,0 +1,280 @@
+//===================================================================================
+//BUTTONS
+.demo-button-sizes {
+    .btn {
+        margin-bottom: 5px;
+    }
+}
+
+.icon-button-demo {
+    button {
+        margin-right: 5px;
+        margin-bottom: 12px;
+    }
+}
+
+.button-demo {
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style: none;
+            padding-left: 0;
+            display: inline-block;
+            margin-right: 7px;
+
+            .btn {
+                display: block;
+                min-width: 175px;
+            }
+        }
+    }
+
+    .btn {
+        margin-right: 8px;
+        margin-bottom: 13px;
+        min-width: 120px;
+    }
+}
+
+.demo-button-groups {
+    .btn-group {
+        margin-right: 10px;
+    }
+}
+
+.demo-button-toolbar {
+    .btn-toolbar {
+        float: left;
+        margin-right: 25px;
+    }
+}
+
+.demo-button-nesting {
+    > .btn-group {
+        margin-right: 15px;
+    }
+}
+
+.demo-single-button-dropdowns {
+    > .btn-group {
+        margin-right: 10px;
+    }
+}
+
+.demo-splite-button-dropdowns {
+    > .btn-group {
+        margin-right: 10px;
+    }
+}
+
+.demo-dropup {
+    .dropup {
+        margin-right: 10px;
+    }
+}
+
+//=====================================================================================
+
+//=====================================================================================
+//CHECKBOX & RADIO
+.demo-checkbox,
+.demo-radio-button {
+    label {
+        min-width: 150px;
+    }
+}
+//=====================================================================================
+
+//=====================================================================================
+//JQUERY KNOB-CHART
+.demo-knob-chart {
+    div {
+        margin-right: 15px;
+    }
+}
+//=====================================================================================
+
+//=====================================================================================
+//SWITCH
+.demo-switch {
+    .switch {
+        display: inline-block;
+        min-width: 170px;
+    }
+
+    .demo-switch-title {
+        min-width: 95px;
+        display: inline-block;
+    }
+}
+//=====================================================================================
+
+//=====================================================================================
+//COLOR BOX
+.demo-color-box {
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    @include border-radius(3px);
+
+    .color-name {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .color-code,
+    .color-class-name {
+        font-size: 13px;
+    }
+}
+//=====================================================================================
+
+//=====================================================================================
+//IMAGES
+.demo-image-copyright {
+    text-align: right;
+    font-style: italic;
+    font-size: 12px;
+    color: #777;
+    margin: 5px 0 10px 0;
+
+    a {
+        font-weight: bold;
+        color: #555 !important;
+    }
+}
+//=====================================================================================
+
+//=====================================================================================
+//TAGS INPUT
+.demo-tagsinput-area {
+    margin-bottom: 50px !important;
+}
+//=====================================================================================
+
+//=====================================================================================
+//GOOGLE MATERIAL DESIGN ICON
+.demo-icon-container {
+    .demo-google-material-icon {
+        margin-bottom: 5px;
+        text-align: left;
+
+        .icon-name {
+            position: relative;
+            top: -8px;
+            left: 7px;
+        }
+
+        .material-icons {
+            width: 24px;
+        }
+    }
+}
+//=====================================================================================
+
+//=====================================================================================
+//PRELOADERS
+.demo-preloader {
+    .md-preloader {
+        margin-right: 5px;
+    }
+}
+//=====================================================================================
+
+//=====================================================================================
+//ION RANGE SLIDER
+.irs-demo {
+    margin-bottom: 40px;
+
+    .irs {
+        margin-top: 15px;
+    }
+}
+//=====================================================================================
+
+//=====================================================================================
+//RIGHT SIDEBAR
+.right-sidebar {
+    .nav-tabs + .tab-content {
+        padding: 0;
+    }
+
+    p {
+        margin: 20px 15px 15px 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #settings {
+
+        .setting-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+
+            li {
+                padding: 15px;
+                position: relative;
+                border-top: 1px solid #eee;
+
+                .switch {
+                    position: absolute;
+                    top: 15px;
+                    right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.demo-choose-skin {
+    list-style: none;
+    padding-left: 0;
+    overflow-y: hidden;
+
+    li {
+        border-bottom: 1px solid #eee;
+        padding: 10px 10px 4px 10px;
+        position: relative;
+        cursor: pointer;
+
+        &.active {
+            background-color: #eee;
+
+            &:after {
+                font-family: 'Material Icons';
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                content: '\E876';
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        &:hover {
+            background-color: #eee;
+        }
+
+        div {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            @include border-radius(3px);
+        }
+
+        span {
+            position: relative;
+            bottom: 7px;
+            left: 5px;
+        }
+    }
+
+    @each $key, $val in $colors {
+        .#{$key} {
+            background-color: $val;
+        }
+    }
+}
+//=====================================================================================

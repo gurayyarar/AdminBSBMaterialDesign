@@ -1,0 +1,47 @@
+{
+  "name": "tinymce",
+  "version": "4.4.1",
+  "description": "Web based JavaScript HTML WYSIWYG editor control.",
+  "license": "LGPL-2.1",
+  "keywords": [
+    "editor",
+    "wysiwyg",
+    "tinymce",
+    "richtext",
+    "javascript",
+    "html"
+  ],
+  "bugs": {
+    "url": "http://www.tinymce.com/develop/bugtracker.php"
+  },
+  "_id": "tinymce@4.4.1",
+  "scripts": {},
+  "_shasum": "c39037add71b0ae4226e29bf7d55be1f92435dcd",
+  "_from": "tinymce@4.4.1",
+  "_resolved": "https://registry.npmjs.org/tinymce/-/tinymce-4.4.1.tgz",
+  "_npmVersion": "3.8.6",
+  "_nodeVersion": "5.11.1",
+  "_npmUser": {
+    "name": "ephox",
+    "email": "is-accounts@ephox.com"
+  },
+  "dist": {
+    "shasum": "c39037add71b0ae4226e29bf7d55be1f92435dcd",
+    "tarball": "https://registry.npmjs.org/tinymce/-/tinymce-4.4.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "ephox",
+      "email": "is-accounts@ephox.com"
+    },
+    {
+      "name": "spocke",
+      "email": "spocke@moxiecode.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/tinymce-4.4.1.tgz_1469527487002_0.7330783300567418"
+  },
+  "directories": {}
+}

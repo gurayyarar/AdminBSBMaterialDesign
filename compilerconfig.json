@@ -1,0 +1,86 @@
+﻿[
+  {
+    "outputFile": "css/themes/all-themes.css",
+    "inputFile": "scss/themes/_all-themes.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-red.css",
+    "inputFile": "scss/themes/theme-red.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-amber.css",
+    "inputFile": "scss/themes/theme-amber.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-black.css",
+    "inputFile": "scss/themes/theme-black.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-blue-grey.css",
+    "inputFile": "scss/themes/theme-blue-grey.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-blue.css",
+    "inputFile": "scss/themes/theme-blue.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-brown.css",
+    "inputFile": "scss/themes/theme-brown.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-cyan.css",
+    "inputFile": "scss/themes/theme-cyan.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-deep-orange.css",
+    "inputFile": "scss/themes/theme-deep-orange.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-deep-purple.css",
+    "inputFile": "scss/themes/theme-deep-purple.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-green.css",
+    "inputFile": "scss/themes/theme-green.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-grey.css",
+    "inputFile": "scss/themes/theme-grey.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-indigo.css",
+    "inputFile": "scss/themes/theme-indigo.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-light-blue.css",
+    "inputFile": "scss/themes/theme-light-blue.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-lime.css",
+    "inputFile": "scss/themes/theme-lime.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-orange.css",
+    "inputFile": "scss/themes/theme-orange.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-pink.css",
+    "inputFile": "scss/themes/theme-pink.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-purple.css",
+    "inputFile": "scss/themes/theme-purple.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-teal.css",
+    "inputFile": "scss/themes/theme-teal.scss"
+  },
+  {
+    "outputFile": "css/themes/theme-yellow.css",
+    "inputFile": "scss/themes/theme-yellow.scss"
+  },
+  {
+    "outputFile": "css/style.css",
+    "inputFile": "scss/style.scss"
+  }
+]

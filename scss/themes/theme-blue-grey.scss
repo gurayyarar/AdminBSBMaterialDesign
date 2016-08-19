@@ -1,0 +1,92 @@
+﻿@import '_theme-color-variables';
+
+.theme-blue-grey {
+
+    .navbar {
+        background-color: $theme-blue-grey;
+    }
+
+    .navbar-brand {
+        color: $theme-blue-grey-navbar-brand;
+
+        &:hover {
+            color: $theme-blue-grey-navbar-brand_hover;
+        }
+
+        &:active {
+            color: $theme-blue-grey-navbar-brand_active;
+        }
+
+        &:focus {
+            color: $theme-blue-grey-navbar-brand_focus;
+        }
+    }
+
+    .nav {
+        > li {
+            > a {
+                color: $theme-blue-grey-nav-anchor;
+
+                &:hover {
+                    background-color: $theme-blue-grey-nav-anchor_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-blue-grey-nav-anchor_focus;
+                }
+            }
+        }
+
+        .open {
+            > a {
+                background-color: $theme-blue-grey-nav-anchor-opened;
+
+                &:hover {
+                    background-color: $theme-blue-grey-nav-anchor-opened_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-blue-grey-nav-anchor-opened_focus;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color: $theme-blue-grey-bar;
+    }
+
+    .sidebar {
+        .menu {
+            .list {
+                li.active {
+                    background-color: $theme-blue-grey-menu-list-active;
+
+                    > :first-child {
+                        i, span {
+                            color: $theme-blue-grey;
+                        }
+                    }
+                }
+
+                .toggled {
+                    background-color: $theme-blue-grey-menu-list-toggled;
+                }
+
+                .ml-menu {
+                    background-color: $theme-blue-grey-menu-list-submenu;
+                }
+            }
+        }
+
+        .legal {
+            background-color: $theme-blue-grey-legal-bg;
+
+            .copyright {
+                a {
+                    color: $theme-blue-grey !important;
+                }
+            }
+        }
+    }
+}

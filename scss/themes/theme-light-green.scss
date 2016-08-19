@@ -1,0 +1,92 @@
+﻿@import '_theme-color-variables';
+
+.theme-light-green {
+
+    .navbar {
+        background-color: $theme-light-green;
+    }
+
+    .navbar-brand {
+        color: $theme-light-green-navbar-brand;
+
+        &:hover {
+            color: $theme-light-green-navbar-brand_hover;
+        }
+
+        &:active {
+            color: $theme-light-green-navbar-brand_active;
+        }
+
+        &:focus {
+            color: $theme-light-green-navbar-brand_focus;
+        }
+    }
+
+    .nav {
+        > li {
+            > a {
+                color: $theme-light-green-nav-anchor;
+
+                &:hover {
+                    background-color: $theme-light-green-nav-anchor_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-light-green-nav-anchor_focus;
+                }
+            }
+        }
+
+        .open {
+            > a {
+                background-color: $theme-light-green-nav-anchor-opened;
+
+                &:hover {
+                    background-color: $theme-light-green-nav-anchor-opened_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-light-green-nav-anchor-opened_focus;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color: $theme-light-green-bar;
+    }
+
+    .sidebar {
+        .menu {
+            .list {
+                li.active {
+                    background-color: $theme-light-green-menu-list-active;
+
+                    > :first-child {
+                        i, span {
+                            color: $theme-light-green;
+                        }
+                    }
+                }
+
+                .toggled {
+                    background-color: $theme-light-green-menu-list-toggled;
+                }
+
+                .ml-menu {
+                    background-color: $theme-light-green-menu-list-submenu;
+                }
+            }
+        }
+
+        .legal {
+            background-color: $theme-light-green-legal-bg;
+
+            .copyright {
+                a {
+                    color: $theme-light-green !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+﻿.theme-deep-orange .navbar {
+  background-color: #FF5722; }
+
+.theme-deep-orange .navbar-brand {
+  color: #fff; }
+  .theme-deep-orange .navbar-brand:hover {
+    color: #fff; }
+  .theme-deep-orange .navbar-brand:active {
+    color: #fff; }
+  .theme-deep-orange .navbar-brand:focus {
+    color: #fff; }
+
+.theme-deep-orange .nav > li > a {
+  color: #fff; }
+  .theme-deep-orange .nav > li > a:hover {
+    background-color: transparent; }
+  .theme-deep-orange .nav > li > a:focus {
+    background-color: transparent; }
+
+.theme-deep-orange .nav .open > a {
+  background-color: transparent; }
+  .theme-deep-orange .nav .open > a:hover {
+    background-color: transparent; }
+  .theme-deep-orange .nav .open > a:focus {
+    background-color: transparent; }
+
+.theme-deep-orange .bars {
+  color: #fff; }
+
+.theme-deep-orange .sidebar .menu .list li.active {
+  background-color: transparent; }
+  .theme-deep-orange .sidebar .menu .list li.active > :first-child i, .theme-deep-orange .sidebar .menu .list li.active > :first-child span {
+    color: #FF5722; }
+
+.theme-deep-orange .sidebar .menu .list .toggled {
+  background-color: transparent; }
+
+.theme-deep-orange .sidebar .menu .list .ml-menu {
+  background-color: transparent; }
+
+.theme-deep-orange .sidebar .legal {
+  background-color: #fff; }
+  .theme-deep-orange .sidebar .legal .copyright a {
+    color: #FF5722 !important; }
+

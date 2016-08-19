@@ -1,0 +1,17 @@
+﻿.dropzone {
+    border: 2px solid transparent !important;
+    background-color: #eee !important;
+
+    .dz-message {
+        .drag-icon-cph {
+            .material-icons {
+                font-size: 80px;
+                color: #777;
+            }
+        }
+    }
+}
+
+.dz-drag-hover {
+    border: 2px dashed #888 !important;
+}

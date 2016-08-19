@@ -1,0 +1,46 @@
+﻿.dtp {
+    div.dtp-date,
+    div.dtp-time {
+        background: #007d72;
+    }
+
+    > .dtp-content {
+        > .dtp-date-view {
+            > header.dtp-header {
+                background: #009688;
+            }
+        }
+    }
+
+    .dtp-buttons {
+        .dtp-btn-ok {
+            margin-left: 10px;
+        }
+
+        .dtp-btn-clear {
+            margin-right: 10px !important;
+        }
+    }
+
+    .p10 {
+        > a {
+            color: #fff;
+        }
+    }
+
+    div.dtp-actual-year {
+        font-size: 1.5em;
+        color: #ffffff;
+    }
+
+    table.dtp-picker-days {
+        tr {
+            td {
+                a.selected {
+                    background: #007d72;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

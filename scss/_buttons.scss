@@ -1,0 +1,137 @@
+﻿.btn {
+    &:focus {
+        outline: none !important;
+    }
+}
+
+.btn-circle {
+    border: none;
+    outline: none !important;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    @include border-radius(50%);
+
+    i {
+        font-size: 18px;
+        position: relative;
+        left: -1px;
+    }
+}
+
+.btn-link {
+    font-weight: bold;
+    color: #333;
+    @include transition(.5s);
+
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: #333;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: #333;
+        background-color: #ddd;
+    }
+}
+
+.btn-circle-lg {
+    border: none;
+    outline: none !important;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    @include border-radius(50% !important);
+
+    i {
+        font-size: 26px !important;
+        position: relative !important;
+        left: 0px !important;
+        top: 6px !important;
+    }
+}
+
+.btn:not(.btn-link):not(.btn-circle) {
+    box-shadow: 0 2px 5px rgba(0,0,0,.16),0 2px 10px rgba(0,0,0,.12);
+    @include border-radius(2px);
+    border: none;
+    font-size: 13px;
+    outline: none;
+
+    &:hover {
+        outline: none;
+    }
+
+    i {
+        font-size: 20px;
+        position: relative;
+        top: 3px;
+    }
+}
+
+.btn-warning,
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning:focus {
+    background-color: #ff9600 !important;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:focus {
+    background-color: #fb483a !important;
+}
+
+.btn-info,
+.btn-info:hover,
+.btn-info:active,
+.btn-info:focus {
+    background-color: #00b0e4 !important;
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+    background-color: #2b982b !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #1f91f3 !important;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+    background-color: #fff !important;
+}
+
+.btn-group,
+.btn-group-vertical {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+
+    .btn {
+        box-shadow: none !important;
+        @include border-radius(0);
+
+        .caret {
+            position: relative;
+            bottom: 1px;
+        }
+    }
+
+    .btn-group {
+        box-shadow: none !important;
+    }
+
+    .btn + .dropdown-toggle {
+        border-left: 1px solid rgba(0,0,0,0.08) !important;
+    }
+}

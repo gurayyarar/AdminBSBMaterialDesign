@@ -1,0 +1,25 @@
+﻿.tooltip {
+    font-size: 13px;
+
+    .tooltip-inner {
+        @include border-radius(0);
+    }
+}
+
+.popover {
+    @include border-radius(0);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    .popover-title {
+        font-weight: bold;
+        @include border-radius(0);
+        background-color: #e9e9e9;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .popover-content {
+        font-size: 13px;
+        color: #777;
+        @include border-radius(0);
+    }
+}

@@ -1,0 +1,6 @@
+﻿.lg-outer {
+    .lg-thumb-item,
+    .lg-toogle-thumb {
+        @include border-radius(0 !important);
+    }
+}

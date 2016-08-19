@@ -1,0 +1,92 @@
+﻿@import '_theme-color-variables';
+
+.theme-indigo {
+
+    .navbar {
+        background-color: $theme-indigo;
+    }
+
+    .navbar-brand {
+        color: $theme-indigo-navbar-brand;
+
+        &:hover {
+            color: $theme-indigo-navbar-brand_hover;
+        }
+
+        &:active {
+            color: $theme-indigo-navbar-brand_active;
+        }
+
+        &:focus {
+            color: $theme-indigo-navbar-brand_focus;
+        }
+    }
+
+    .nav {
+        > li {
+            > a {
+                color: $theme-indigo-nav-anchor;
+
+                &:hover {
+                    background-color: $theme-indigo-nav-anchor_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-indigo-nav-anchor_focus;
+                }
+            }
+        }
+
+        .open {
+            > a {
+                background-color: $theme-indigo-nav-anchor-opened;
+
+                &:hover {
+                    background-color: $theme-indigo-nav-anchor-opened_hover;
+                }
+
+                &:focus {
+                    background-color: $theme-indigo-nav-anchor-opened_focus;
+                }
+            }
+        }
+    }
+
+    .bars {
+        color: $theme-indigo-bar;
+    }
+
+    .sidebar {
+        .menu {
+            .list {
+                li.active {
+                    background-color: $theme-indigo-menu-list-active;
+
+                    > :first-child {
+                        i, span {
+                            color: $theme-indigo;
+                        }
+                    }
+                }
+
+                .toggled {
+                    background-color: $theme-indigo-menu-list-toggled;
+                }
+
+                .ml-menu {
+                    background-color: $theme-indigo-menu-list-submenu;
+                }
+            }
+        }
+
+        .legal {
+            background-color: $theme-indigo-legal-bg;
+
+            .copyright {
+                a {
+                    color: $theme-indigo !important;
+                }
+            }
+        }
+    }
+}

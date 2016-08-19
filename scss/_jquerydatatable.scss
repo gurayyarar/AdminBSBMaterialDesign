@@ -1,0 +1,51 @@
+﻿.dataTables_wrapper {
+    position: relative;
+
+    select {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        @include border-radius(0);
+        @include box-shadow(none);
+
+        &:active,
+        &:focus {
+            @include box-shadow(none);
+        }
+    }
+
+    input[type="search"] {
+        @include border-radius(0);
+        @include box-shadow(none);
+        border: none;
+        font-size: 12px;
+        border-bottom: 1px solid #ddd;
+
+        &:focus,
+        &:active {
+            border-bottom: 2px solid #1f91f3;
+        }
+    }
+
+    .dt-buttons {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        a.dt-button {
+            background-color: #607D8B;
+            color: #fff;
+            padding: 7px 12px;
+            margin-right: 5px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+            @include border-radius(2px);
+            border: none;
+            font-size: 13px;
+            outline: none;
+
+            &:active {
+                opacity: 0.8;
+            }
+        }
+    }
+}

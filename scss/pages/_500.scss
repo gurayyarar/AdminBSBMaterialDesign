@@ -1,0 +1,22 @@
+﻿.five-zero-zero {
+    width: 100%;
+    text-align: center;
+    margin: 5% auto;
+
+    .five-zero-zero-container {
+        .error-code {
+            font-size: 160px;
+        }
+
+        .error-message {
+            font-size: 27px;
+            color: #333;
+            font-weight: bold;
+            margin-top: -40px;
+        }
+
+        .button-place {
+            margin-top: 32px;
+        }
+    }
+}

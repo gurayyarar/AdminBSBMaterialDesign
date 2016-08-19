@@ -1,0 +1,22 @@
+﻿.four-zero-four {
+    width: 100%;
+    text-align: center;
+    margin: 5% auto;
+
+    .four-zero-four-container {
+        .error-code {
+            font-size: 160px;
+        }
+
+        .error-message {
+            font-size: 26px;
+            color: #333;
+            font-weight: bold;
+            margin-top: -40px;
+        }
+
+        .button-place {
+            margin-top: 32px;
+        }
+    }
+}
