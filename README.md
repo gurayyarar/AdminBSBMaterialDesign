@@ -21,7 +21,7 @@ You can choose one from multiple ways for installation.
 - Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
 - Clone to your machine
 ```
-git clone https://github.com/gurayyarar/AdminBSBMaterialDesign.git
+git clone https://github.com/YOUR_USERNAME/AdminBSBMaterialDesign.git
 ```
 
 **npm**

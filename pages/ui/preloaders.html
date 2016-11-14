@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Preloaders | Bootstrap Based Admin Template - Material Design</title>
     <!-- Favicon-->
@@ -21,9 +22,6 @@
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Preloader Css -->
-    <link href="../../plugins/material-design-preloader/md-preloader.css" rel="stylesheet" />
-
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
 
@@ -35,10 +33,15 @@
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
-            <div class="md-preloader pl-size-md">
-                <svg viewbox="0 0 75 75">
-                    <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="4" />
-                </svg>
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
             </div>
             <p>Please wait...</p>
         </div>
@@ -635,7 +638,7 @@
                     &copy; 2016 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
                 </div>
                 <div class="version">
-                    <b>Version: </b> 1.0.3
+                    <b>Version: </b> 1.0.4
                 </div>
             </div>
             <!-- #Footer -->
@@ -798,7 +801,6 @@
                         <div class="header">
                             <h2>
                                 PRELOADERS - DIFFERENT SIZES
-                                <small>Taken by Md-Preloader <a href="https://github.com/rtheunissen/md-preloader" target="_blank">github.com/rtheunissen/md-preloader</a></small>
                             </h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
@@ -815,30 +817,59 @@
                         </div>
                         <div class="body">
                             <div class="demo-preloader">
-                                <div class="md-preloader pl-size-xl">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="4" />
-                                    </svg>
+                                <div class="preloader pl-size-xl">
+                                    <div class="spinner-layer">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-l">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-orange" stroke-width="5" />
-                                    </svg>
+
+                                <div class="preloader pl-size-l">
+                                    <div class="spinner-layer pl-orange">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-teal" stroke-width="5" />
-                                    </svg>
+
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-teal">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-sm">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-purple" stroke-width="5" />
-                                    </svg>
+
+                                <div class="preloader pl-size-sm">
+                                    <div class="spinner-layer pl-purple">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-xs">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-blue-grey" stroke-width="5" />
-                                    </svg>
+
+                                <div class="preloader pl-size-xs">
+                                    <div class="spinner-layer pl-red-grey">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -870,105 +901,205 @@
                         </div>
                         <div class="body">
                             <div class="demo-preloader">
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-pink" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-pink">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-purple" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-purple">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-deep-purple" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-deep-purple">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-indigo" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-indigo">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-blue" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-red">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-light-blue" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-light-blue">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-cyan" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-cyan">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-teal" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-teal">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-green" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-green">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-light-green" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-light-green">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-lime" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-lime">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-yellow" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-yellow">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-amber" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-amber">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-orange" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-orange">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-deep-orange" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-deep-orange">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-brown" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-brown">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-grey" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-grey">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-blue-grey" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-red-grey">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="md-preloader pl-size-md">
-                                    <svg viewbox="0 0 75 75">
-                                        <circle cx="37.5" cy="37.5" r="33.5" class="pl-black" stroke-width="5" />
-                                    </svg>
+                                <div class="preloader">
+                                    <div class="spinner-layer pl-black">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

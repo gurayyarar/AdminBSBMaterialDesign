@@ -21,9 +21,6 @@
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Preloader Css -->
-    <link href="../../plugins/material-design-preloader/md-preloader.css" rel="stylesheet" />
-
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
 
@@ -35,10 +32,15 @@
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
-            <div class="md-preloader pl-size-md">
-                <svg viewbox="0 0 75 75">
-                    <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="4" />
-                </svg>
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
             </div>
             <p>Please wait...</p>
         </div>
@@ -635,7 +637,7 @@
                     &copy; 2016 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
                 </div>
                 <div class="version">
-                    <b>Version: </b> 1.0.3
+                    <b>Version: </b> 1.0.4
                 </div>
             </div>
             <!-- #Footer -->
