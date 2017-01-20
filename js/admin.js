@@ -330,7 +330,7 @@ $.AdminBSB.dropdownMenu = {
         var effectIn = $.AdminBSB.options.dropdownMenu.effectIn, effectOut = $.AdminBSB.options.dropdownMenu.effectOut;
         var dropdown = $(target), dropdownMenu = $('.dropdown-menu', target);
 
-        if (dropdown.size() > 0) {
+        if (dropdown.length > 0) {
             var udEffectIn = dropdown.data('effect-in');
             var udEffectOut = dropdown.data('effect-out');
             if (udEffectIn !== undefined) { effectIn = udEffectIn; }
