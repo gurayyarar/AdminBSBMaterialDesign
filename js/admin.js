@@ -122,6 +122,9 @@ $.AdminBSB.leftSideBar = {
                 borderRadius: configs.scrollBorderRadius,
                 railBorderRadius: configs.scrollRailBorderRadius
             });
+
+            var top = $('a.toggled:not(.menu-toggle)').position().top;
+            $el.slimScroll({ scrollTo: top + 'px' });
         }
     },
     checkStatuForResize: function (firstTime) {
