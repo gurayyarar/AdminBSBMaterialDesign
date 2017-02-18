@@ -32,7 +32,8 @@ $.AdminBSB.options = {
         scrollWidth: '4px',
         scrollAlwaysVisible: false,
         scrollBorderRadius: '0',
-        scrollRailBorderRadius: '0'
+        scrollRailBorderRadius: '0',
+        breakpointWidth: '1170'
     },
     dropdownMenu: {
         effectIn: 'fadeIn',
@@ -135,7 +136,7 @@ $.AdminBSB.leftSideBar = {
             });
         }
 
-        if (width < 1170) {
+        if (width < $.AdminBSB.options.leftSideBar.breakpointWidth) {
             $body.addClass('ls-closed');
             $openCloseBar.fadeIn();
         }
