@@ -279,7 +279,7 @@ $.AdminBSB.input = {
         //Not blank form
         $('.form-control').each(function() {
           if ($(this).val() !== '') {
-            $(this).parent('.form-line').addClass('focused');
+            $(this).parents('.form-line').addClass('focused');
           }
         });
     }
