@@ -33,7 +33,8 @@ $.AdminBSB.options = {
         scrollAlwaysVisible: false,
         scrollBorderRadius: '0',
         scrollRailBorderRadius: '0',
-        scrollActiveItemWhenPageLoad: true
+        scrollActiveItemWhenPageLoad: true,
+        breakpointWidth: 1170
     },
     dropdownMenu: {
         effectIn: 'fadeIn',
@@ -139,7 +140,7 @@ $.AdminBSB.leftSideBar = {
             });
         }
 
-        if (width < 1170) {
+        if (width < $.AdminBSB.options.leftSideBar.breakpointWidth) {
             $body.addClass('ls-closed');
             $openCloseBar.fadeIn();
         }
@@ -281,10 +282,10 @@ $.AdminBSB.input = {
         });
 
         //Not blank form
-        $('.form-control').each(function() {
-          if ($(this).val() !== '') {
-            $(this).parents('.form-line').addClass('focused');
-          }
+        $('.form-control').each(function () {
+            if ($(this).val() !== '') {
+                $(this).parents('.form-line').addClass('focused');
+            }
         });
     }
 }
