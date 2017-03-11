@@ -279,6 +279,13 @@ $.AdminBSB.input = {
         $('body').on('click', '.form-float .form-line .form-label', function () {
             $(this).parent().find('input').focus();
         });
+
+        //Not blank form
+        $('.form-control').each(function() {
+          if ($(this).val() !== '') {
+            $(this).parents('.form-line').addClass('focused');
+          }
+        });
     }
 }
 //==========================================================================================================================
