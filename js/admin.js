@@ -32,7 +32,8 @@ $.AdminBSB.options = {
         scrollWidth: '4px',
         scrollAlwaysVisible: false,
         scrollBorderRadius: '0',
-        scrollRailBorderRadius: '0'
+        scrollRailBorderRadius: '0',
+        scrollActiveItemWhenPageLoad: true
     },
     dropdownMenu: {
         effectIn: 'fadeIn',
@@ -105,14 +106,11 @@ $.AdminBSB.leftSideBar = {
         Waves.attach('.menu .list a', ['waves-block']);
         Waves.init();
     },
-    setMenuHeight: function () {
+    setMenuHeight: function (isFirstTime) {
         if (typeof $.fn.slimScroll != 'undefined') {
             var configs = $.AdminBSB.options.leftSideBar;
             var height = ($(window).height() - ($('.legal').outerHeight() + $('.user-info').outerHeight() + $('.navbar').innerHeight()));
             var $el = $('.list');
-
-            $el.slimScroll({ destroy: true }).height("auto");
-            $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
 
             $el.slimscroll({
                 height: height + "px",
@@ -122,6 +120,12 @@ $.AdminBSB.leftSideBar = {
                 borderRadius: configs.scrollBorderRadius,
                 railBorderRadius: configs.scrollRailBorderRadius
             });
+
+            //Scroll active menu item when page load, if option set = true
+            if ($.AdminBSB.options.leftSideBar.scrollActiveItemWhenPageLoad) {
+                var activeItemOffsetTop = $('.menu .list li.active')[0].offsetTop
+                if (activeItemOffsetTop > 150) $el.slimscroll({ scrollTo: activeItemOffsetTop + 'px' });
+            }
         }
     },
     checkStatuForResize: function (firstTime) {
