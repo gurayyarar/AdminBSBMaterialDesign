@@ -3,7 +3,7 @@
         > .container,
         > .container-fluid {
             .navbar-brand {
-                margin-left: 35px;
+                margin-#{$left}: 35px;
                 width: 73%;
             }
         }
@@ -23,7 +23,7 @@
         .navbar-nav {
             margin-top: -10px;
             margin-bottom: 1px;
-            margin-left: -7px;
+            margin-#{$left}: -7px;
 
             .open {
                 .dropdown-menu {
@@ -34,7 +34,7 @@
         }
 
         .dropdown-menu {
-            margin-left: -50px;
+            margin-#{$left}: -50px;
         }
 
         .js-right-sidebar {
@@ -50,7 +50,7 @@
 
     .panel-switch-btn {
         top: 12px;
-        right: 0 !important;
+        #{$right}: 0 !important;
     }
 }
 
@@ -59,7 +59,7 @@
         > .container,
         > .container-fluid {
             .navbar-brand {
-                margin-left: 20px;
+                margin-#{$left}: 20px;
             }
         }
     }
@@ -70,7 +70,7 @@
         > .container,
         > .container-fluid {
             .navbar-brand {
-                margin-left: 20px;
+                margin-#{$left}: 20px;
             }
         }
     }

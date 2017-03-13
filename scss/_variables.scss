@@ -5,3 +5,8 @@ $colors: ( red: #F44336, pink: #E91E63, purple: #9C27B0, deep-purple: #673AB7, i
 //Fonts Family
 $navbar-font-family: 'Roboto', sans-serif;
 $sidebar-font-family: 'Roboto', sans-serif;
+
+// Direction variables
+$direction: ltr !default;
+$left: left !default;
+$right: right !default;

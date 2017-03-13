@@ -27,7 +27,7 @@
 .wizard > .content > .title,
 .tabcontrol > .content > .title {
     position: absolute;
-    left: -999em;
+    #{$left}: -999em;
 }
 
 .wizard {
@@ -39,7 +39,7 @@
 
     &.vertical {
         > .steps {
-            float: left;
+            float: $left;
             width: 30%;
         }
 
@@ -49,13 +49,13 @@
         }
 
         > .content {
-            float: left;
+            float: $left;
             margin: 0 0 0.5em 0;
             width: 70%;
         }
 
         > .actions {
-            float: right;
+            float: $right;
             width: 100%;
         }
 
@@ -72,12 +72,12 @@
 
             > ul > li {
                 width: 25%;
-                float: left;
+                float: $left;
             }
         }
 
         .actions > ul > li {
-            float: left;
+            float: $left;
         }
     }
 
@@ -165,14 +165,14 @@
         .actions {
             position: relative;
             display: block;
-            text-align: right;
+            text-align: $right;
             width: 100%;
         }
     }
 
     > .actions > ul {
         display: inline-block;
-        text-align: right;
+        text-align: $right;
 
         > li {
             margin: 0 0.5em;
@@ -225,13 +225,13 @@
             z-index: 1;
 
             > li {
-                float: left;
+                float: $left;
                 margin: 5px 2px 0 0;
                 padding: 1px;
                 -webkit-border-top-left-radius: 5px;
                 -webkit-border-top-right-radius: 5px;
-                -moz-border-radius-topleft: 5px;
-                -moz-border-radius-topright: 5px;
+                -moz-border-radius-top#{$left}: 5px;
+                -moz-border-radius-top#{$right}: 5px;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
 
@@ -279,7 +279,7 @@
         padding-top: 20px;
 
         > .body {
-            float: left;
+            float: $left;
             position: absolute;
             width: 95%;
             height: 95%;

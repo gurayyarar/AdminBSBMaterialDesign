@@ -14,11 +14,11 @@
 
     .dtp-buttons {
         .dtp-btn-ok {
-            margin-left: 10px;
+            margin-#{$left}: 10px;
         }
 
         .dtp-btn-clear {
-            margin-right: 10px !important;
+            margin-#{$right}: 10px !important;
         }
     }
 

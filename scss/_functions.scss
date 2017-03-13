@@ -1,0 +1,8 @@
+@function directionBased($top, $right, $bottom, $left: $right) {
+    @if $left == right {
+      @return $top $left $bottom $right;
+    }
+    @else {
+      @return $top $right $bottom $left;
+    }
+}

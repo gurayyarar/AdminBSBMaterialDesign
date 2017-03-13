@@ -9,7 +9,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    direction: ltr;
+    direction: $direction;
 
     * {
         -webkit-touch-callout: none;
@@ -33,9 +33,9 @@
 
 .noUi-origin {
     position: absolute;
-    right: 0;
+    #{$right}: 0;
     top: 6px;
-    left: 0;
+    #{$left}: 0;
     bottom: 0;
 }
 
@@ -52,8 +52,8 @@
 
 .noUi-state-tap {
     .noUi-origin {
-        -webkit-transition: left 0.25s, top 0.25s;
-        transition: left 0.25s, top 0.25s;
+        -webkit-transition: $left 0.25s, top 0.25s;
+        transition: $left 0.25s, top 0.25s;
     }
 }
 
@@ -72,7 +72,7 @@
     .noUi-handle {
         width: 34px;
         height: 28px;
-        left: -17px;
+        #{$left}: -17px;
         top: -6px;
     }
 }
@@ -83,7 +83,7 @@
     .noUi-handle {
         width: 28px;
         height: 34px;
-        left: -6px;
+        #{$left}: -6px;
         top: -17px;
     }
 }
@@ -142,7 +142,7 @@
         height: 14px;
         width: 1px;
         background: #E8E7E6;
-        left: 14px;
+        #{$left}: 14px;
         top: 6px;
     }
 
@@ -153,9 +153,9 @@
         height: 14px;
         width: 1px;
         background: #E8E7E6;
-        left: 14px;
+        #{$left}: 14px;
         top: 6px;
-        left: 17px;
+        #{$left}: 17px;
     }
 }
 
@@ -163,14 +163,14 @@
     &:before {
         width: 14px;
         height: 1px;
-        left: 6px;
+        #{$left}: 6px;
         top: 14px;
     }
 
     &:after {
         width: 14px;
         height: 1px;
-        left: 6px;
+        #{$left}: 6px;
         top: 14px;
         top: 17px;
     }
@@ -221,9 +221,9 @@
     box-shadow: none;
     background-color: #26A69A;
     border: none;
-    left: -5px;
+    #{$left}: -5px;
     top: -6px;
-    transition: width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), height 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), top 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), height 0.2s cubic-bezier(0.215, 0.61, 0.355, 1),$left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), top 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .noUi-handle {
@@ -244,7 +244,7 @@
         height: 30px;
         width: 30px;
         top: -17px;
-        left: -2px;
+        #{$left}: -2px;
         background-color: #26A69A;
         border-radius: 50%;
         transition: border-radius 0.25s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -267,7 +267,7 @@
     opacity: 0;
     position: absolute;
     top: 7px;
-    left: -1px;
+    #{$left}: -1px;
     transition: opacity 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
