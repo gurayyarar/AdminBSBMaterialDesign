@@ -1,8 +1,7 @@
-@function directionBased($top, $right, $bottom, $left: $right) {
-    @if $left == right {
-      @return $top $left $bottom $right;
-    }
-    @else {
-      @return $top $right $bottom $left;
-    }
+@function sizes-based-on-dir($t, $r, $b, $l:$r) {
+  @if $left == right {
+    @return $t $l $b $r;
+  } @else {
+    @return $t $r $b $l;
+  }
 }

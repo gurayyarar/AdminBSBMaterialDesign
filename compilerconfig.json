@@ -82,5 +82,9 @@
   {
     "outputFile": "css/style.css",
     "inputFile": "scss/style.scss"
+  },
+  {
+    "outputFile": "css/style-rtl.css",
+    "inputFile": "scss/style-rtl.scss"
   }
 ]

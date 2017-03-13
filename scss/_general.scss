@@ -41,7 +41,7 @@ a {
 
 section {
     &.content {
-        margin: 100px 15px 0 315px;
+        margin: sizes-based-on-dir(100px, 15px, 0, 315px);
         @include transition(.5s);
     }
 }

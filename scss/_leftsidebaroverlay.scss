@@ -188,7 +188,7 @@
                 }
 
                 span {
-                    margin: 7px 0 7px 12px;
+                    margin: sizes-based-on-dir(7px, 0, 7px, 12px);
                     color: #333;
                     font-weight: bold;
                     font-size: 14px;
@@ -204,7 +204,7 @@
                 span {
                     font-weight: normal;
                     font-size: 14px;
-                    margin: 3px 0 1px 6px;
+                    margin: sizes-based-on-dir(3px, 0, 1px, 6px);
                 }
 
                 li {
