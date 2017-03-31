@@ -7,6 +7,10 @@ AdminBSB - Material Design
 
 It's really easy to customize and usage. You can use for from 320px to large resolution pixels of new generation screens and mobile devices. (**Fully Responsive Material Design**)
 
+Looking for Premium Templates or Make Donation?
+----------------
+**If you need more features or if you want to make donation with buying template, please visit portfolio of mine which page link is [https://themeforest.net/user/gurayyarar/portfolio](https://themeforest.net/user/gurayyarar/portfolio)**
+
 Demo
 ----------------
 You can check the website preview with **[this link](https://gurayyarar.github.io/AdminBSBMaterialDesign/)**  
@@ -63,3 +67,9 @@ No, not required. (Though very much appreciated)
 License
 ----------
 **AdminBSB - Material Design** is an open source project that is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+Donations
+----------
+Donations are **greatly appreciated!**
+
+**[DONATE WITH BUY PREMIUM TEMPLATE](https://themeforest.net/user/gurayyarar/portfolio)**
