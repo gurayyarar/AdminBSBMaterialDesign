@@ -2818,7 +2818,8 @@ section.content {
   min-height: 50px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   position: relative;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border-radius: 2px; }
   .card .card-inside-title {
     margin-top: 25px;
     margin-bottom: 15px;
