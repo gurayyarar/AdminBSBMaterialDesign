@@ -58,7 +58,7 @@ You can display all release notes with **[this link](https://gurayyarar.github.i
 
 FAQ
 ===
-**Can i use this template for personal or commercial websites/web projects?**  
+**Can I use this template for personal or commercial websites/web projects?**  
 Sure, you can use both of personal and commercial websites/web projects.
 
 **Is the attribution link required?**  
