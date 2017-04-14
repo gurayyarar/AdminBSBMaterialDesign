@@ -2,8 +2,8 @@
     position: fixed;
     cursor: pointer;
     top: 0;
-    left: 0;
-    right: 0;
+    #{$left}: 0;
+    #{$right}: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     display: none;
@@ -12,7 +12,7 @@
 
 .overlay-open {
     .sidebar {
-        margin-left: 0;
+        margin-#{$left}: 0;
         z-index: 99999999;
     }
 }
@@ -27,7 +27,7 @@
     height: calc(100vh - 70px);
     position: fixed;
     top: 70px;
-    left: 0;
+    #{$left}: 0;
     @include box-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
     z-index: 11 !important;
 
@@ -65,7 +65,7 @@
         height: 135px;
 
         .image {
-            margin-right: 12px;
+            margin-#{$right}: 12px;
             display: inline-block;
 
             img {
@@ -96,7 +96,7 @@
 
             .user-helper-dropdown {
                 position: absolute;
-                right: -3px;
+                #{$right}: -3px;
                 bottom: -12px;
                 @include box-shadow(none);
                 cursor: pointer;
@@ -113,7 +113,7 @@
 
         .list {
             list-style: none;
-            padding-left: 0;
+            padding-#{$left}: 0;
 
             li {
                 &.active {
@@ -140,7 +140,7 @@
                 &:after, &:before {
                     position: absolute;
                     top: calc(50% - 14px);
-                    right: 17px;
+                    #{$right}: 17px;
                     font-size: 19px;
                     @include transform(scale(0));
                     @include transition(all .3s);
@@ -184,11 +184,11 @@
                 small {
                     position: absolute;
                     top: calc(50% - 7.5px);
-                    right: 15px;
+                    #{$right}: 15px;
                 }
 
                 span {
-                    margin: 7px 0 7px 12px;
+                    margin: sizes-based-on-dir(7px, 0, 7px, 12px);
                     color: #333;
                     font-weight: bold;
                     font-size: 14px;
@@ -199,17 +199,17 @@
             .ml-menu {
                 list-style: none;
                 display: none;
-                padding-left: 0;
+                padding-#{$left}: 0;
 
                 span {
                     font-weight: normal;
                     font-size: 14px;
-                    margin: 3px 0 1px 6px;
+                    margin: sizes-based-on-dir(3px, 0, 1px, 6px);
                 }
 
                 li {
                     a {
-                        padding-left: 55px;
+                        padding-#{$left}: 55px;
                         padding-top: 7px;
                         padding-bottom: 7px;
                     }
@@ -217,7 +217,7 @@
                     &.active {
                         a.toggled:not(.menu-toggle) {
                             font-weight: 600;
-                            margin-left: 5px;
+                            margin-#{$left}: 5px;
 
                             &:before {
                                 content: '\E315';
@@ -226,7 +226,7 @@
                                 font-size: 21px;
                                 height: 20px;
                                 top: -5px;
-                                right: 0px;
+                                #{$right}: 0px;
                             }
                         }
                     }
@@ -234,14 +234,14 @@
                     .ml-menu {
                         li {
                             a {
-                                padding-left: 80px;
+                                padding-#{$left}: 80px;
                             }
                         }
 
                         .ml-menu {
                             li {
                                 a {
-                                    padding-left: 95px;
+                                    padding-#{$left}: 95px;
                                 }
                             }
                         }
@@ -256,7 +256,7 @@
     width: 280px;
     height: calc(100vh - 70px);
     position: fixed;
-    right: -300px;
+    #{$right}: -300px;
     top: 70px;
     background: #fdfdfd;
     z-index: 11 !important;
@@ -265,20 +265,20 @@
     @include transition(.5s);
 
     &.open {
-        right: 0;
+        #{$right}: 0;
     }
 
     .nav-tabs {
         font-weight: 600;
         font-size: 13px;
         width: 100%;
-        margin-left: 2px;
+        margin-#{$left}: 2px;
 
         li {
             text-align: center;
 
             > a {
-                margin-right: 0;
+                margin-#{$right}: 0;
             }
 
             &:first-child {

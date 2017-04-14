@@ -91,7 +91,7 @@
         background-color: rgba(0,0,0,0.05);
         content: ".";
         position: absolute;
-        left: 80px;
+        #{$left}: 80px;
         top: 0;
         width: 0;
         height: 100%;
@@ -198,7 +198,7 @@
         background-color: rgba(0,0,0,0.05);
         content: ".";
         position: absolute;
-        left: 0;
+        #{$left}: 0;
         top: 0;
         width: 0;
         height: 100%;
@@ -225,7 +225,7 @@
 
     .icon {
         position: absolute;
-        right: 10px;
+        #{$right}: 10px;
         bottom: 2px;
         text-align: center;
 
@@ -236,7 +236,7 @@
     }
 
     .chart {
-        margin-right: 5px;
+        margin-#{$right}: 5px;
     }
 
     .chart.chart-bar {
@@ -307,7 +307,7 @@
         background-color: rgba(0,0,0,0.05);
         content: ".";
         position: absolute;
-        left: 0;
+        #{$left}: 0;
         top: 0;
         width: 0;
         height: 100%;
@@ -334,7 +334,7 @@
 
     .icon {
         position: absolute;
-        right: 10px;
+        #{$right}: 10px;
         bottom: 2px;
         text-align: center;
 
@@ -345,7 +345,7 @@
     }
 
     .chart {
-        margin-right: 5px;
+        margin-#{$right}: 5px;
     }
 
     .chart.chart-bar {
@@ -416,7 +416,7 @@
         background-color: rgba(0,0,0,0.05);
         content: ".";
         position: absolute;
-        left: 0;
+        #{$left}: 0;
         top: 0;
         width: 0;
         height: 100%;

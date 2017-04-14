@@ -71,7 +71,7 @@
         .header-dropdown {
             position: absolute;
             top: 20px;
-            right: 15px;
+            #{$right}: 15px;
             list-style: none;
 
             .dropdown-menu {

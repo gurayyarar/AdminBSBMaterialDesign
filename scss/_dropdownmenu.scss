@@ -18,7 +18,7 @@
     }
 
     ul.menu {
-        padding-left: 0;
+        padding-#{$left}: 0;
 
         &.tasks {
             h4 {
@@ -27,7 +27,7 @@
                 margin: 0 0 8px 0;
 
                 small {
-                    float: right;
+                    float: $right;
                     margin-top: 6px;
                 }
             }
@@ -74,7 +74,7 @@
             display: inline-block;
             position: relative;
             top: 3px;
-            left: 5px;
+            #{$left}: 5px;
 
             h4 {
                 margin: 0;
@@ -124,8 +124,8 @@
             }
 
             i.material-icons {
-                float: left;
-                margin-right: 7px;
+                float: $left;
+                margin-#{$right}: 7px;
                 margin-top: 2px;
                 font-size: 20px;
             }

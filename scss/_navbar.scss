@@ -5,7 +5,7 @@
     border: none;
     position: fixed;
     top: 0;
-    left: 0;
+    #{$left}: 0;
     z-index: 12;
     width: 100%;
 
@@ -14,7 +14,7 @@
     }
 
     .navbar-custom-right-menu {
-        float: right;
+        float: $right;
     }
 
     .navbar-toggle {
@@ -23,7 +23,7 @@
         width: 20px;
         height: 20px;
         margin-top: -4px;
-        margin-right: 17px;
+        margin-#{$right}: 17px;
 
         &:before {
             content: '\E8D5';
@@ -41,11 +41,11 @@
 
 .ls-closed {
     .sidebar {
-        margin-left: -300px;
+        margin-#{$left}: -300px;
     }
 
     section.content {
-        margin-left: 15px;
+        margin-#{$left}: 15px;
     }
 
     .bars {
@@ -55,8 +55,8 @@
             font-size: 24px;
             position: absolute;
             top: 18px;
-            left: 20px;
-            margin-right: 10px;
+            #{$left}: 20px;
+            margin-#{$right}: 10px;
             @include transform(scale(0));
             @include transition(all .3s);
         }
@@ -73,7 +73,7 @@
     }
 
     .navbar-brand {
-        margin-left: 30px;
+        margin-#{$left}: 30px;
     }
 }
 
@@ -93,7 +93,7 @@
     padding: 10px 7px;
 
     .bars {
-        float: left;
+        float: $left;
         text-decoration: none;
     }
 }
@@ -103,7 +103,7 @@
         > a {
             padding: 7px 7px 2px 7px;
             margin-top: 17px;
-            margin-left: 5px;
+            margin-#{$left}: 5px;
         }
     }
 
@@ -115,7 +115,7 @@
 .label-count {
     position: absolute;
     top: 2px;
-    right: 6px;
+    #{$right}: 6px;
     font-size: 10px;
     line-height: 15px;
     background-color: #000;

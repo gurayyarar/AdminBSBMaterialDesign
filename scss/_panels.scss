@@ -19,9 +19,9 @@
 
         .panel-title {
             .material-icons {
-                float: left;
+                float: $left;
                 line-height: 16px;
-                margin-right: 8px;
+                margin-#{$right}: 8px;
             }
         }
 

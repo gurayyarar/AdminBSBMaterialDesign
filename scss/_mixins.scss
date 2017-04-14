@@ -56,12 +56,12 @@
     }
 
     .bars {
-        float: left;
+        float: $left;
         padding: 10px 20px;
         font-size: 22px;
         color: $textcolor;
-        margin-right: 10px;
-        margin-left: -10px;
+        margin-#{$right}: 10px;
+        margin-#{$left}: -10px;
         margin-top: 4px;
     }
 

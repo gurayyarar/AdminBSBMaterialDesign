@@ -15,7 +15,7 @@
     i {
         font-size: 18px;
         position: relative;
-        left: -1px;
+        #{$left}: -1px;
     }
 }
 
@@ -48,7 +48,7 @@
     i {
         font-size: 26px !important;
         position: relative !important;
-        left: 0px !important;
+        #{$left}: 0px !important;
         top: 6px !important;
     }
 }
@@ -132,6 +132,6 @@
     }
 
     .btn + .dropdown-toggle {
-        border-left: 1px solid rgba(0,0,0,0.08) !important;
+        border-#{$left}: 1px solid rgba(0,0,0,0.08) !important;
     }
 }

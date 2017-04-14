@@ -27,13 +27,13 @@
     }
 
     .dt-buttons {
-        float: left;
+        float: $left;
 
         a.dt-button {
             background-color: #607D8B;
             color: #fff;
             padding: 7px 12px;
-            margin-right: 5px;
+            margin-#{$right}: 5px;
             text-decoration: none;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
             @include border-radius(2px);
@@ -51,14 +51,14 @@
 .dt-button-info {
     position: fixed;
     top: 50%;
-    left: 50%;
+    #{$left}: 50%;
     min-width: 400px;
     text-align: center;
     background-color: #fff;
     border: 2px solid #999;
     @include border-radius(3px);
     margin-top: -100px;
-    margin-left: -200px;
+    margin-#{$left}: -200px;
     z-index: 21;
 
     h2 {
