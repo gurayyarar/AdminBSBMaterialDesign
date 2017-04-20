@@ -7910,6 +7910,11 @@ fieldset[disabled] .form-control {
     border: none; }
 
 /* Jquery DataTable ============================ */
+.dataTables_scroll{
+    overflow:auto;
+    position:relative;
+}
+
 .dataTables_wrapper {
   position: relative; }
   .dataTables_wrapper select {
