@@ -7951,10 +7951,7 @@ fieldset[disabled] .form-control {
     	padding-top: 5px;
       padding-bottom: 5px;
       overflow: auto;
-      float: left;
-      text-overflow: "» ";
-      color: white;
-      font-size: x-large; }
+      float: left; }
     .dataTables_wrapper .dt-buttons a.dt-button {
       background-color: #607D8B;
       color: #fff;
