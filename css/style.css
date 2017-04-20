@@ -7948,7 +7948,13 @@ fieldset[disabled] .form-control {
     .dataTables_wrapper input[type="search"]:focus, .dataTables_wrapper input[type="search"]:active {
       border-bottom: 2px solid #1f91f3; }
   .dataTables_wrapper .dt-buttons {
-    float: left; }
+    	padding-top: 5px;
+      padding-bottom: 5px;
+      overflow: auto;
+      float: left;
+      text-overflow: "» ";
+      color: white;
+      font-size: x-large; }
     .dataTables_wrapper .dt-buttons a.dt-button {
       background-color: #607D8B;
       color: #fff;
