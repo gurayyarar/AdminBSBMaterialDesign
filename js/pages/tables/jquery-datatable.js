@@ -17,4 +17,5 @@ $(function () {
     });
 
     $('.js-exportable').wrap('<div class="dataTables_scroll" />');
+    $('.js-basic-example').wrap('<div class="dataTables_scroll" />');
 });
