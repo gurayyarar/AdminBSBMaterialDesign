@@ -259,14 +259,16 @@ $.AdminBSB.navbar = {
 *  
 */
 $.AdminBSB.input = {
-    activate: function () {
+    activate: function ($parentSelector) {
+        $parentSelector = $parentSelector || $('body');
+
         //On focus event
-        $('.form-control').focus(function () {
+        $parentSelector.find('.form-control').focus(function () {
             $(this).parent().addClass('focused');
         });
 
         //On focusout event
-        $('.form-control').focusout(function () {
+        $parentSelector.find('.form-control').focusout(function () {
             var $this = $(this);
             if ($this.parents('.form-group').hasClass('form-float')) {
                 if ($this.val() == '') { $this.parents('.form-line').removeClass('focused'); }
@@ -277,12 +279,12 @@ $.AdminBSB.input = {
         });
 
         //On label click
-        $('body').on('click', '.form-float .form-line .form-label', function () {
+        $parentSelector.on('click', '.form-float .form-line .form-label', function () {
             $(this).parent().find('input').focus();
         });
 
         //Not blank form
-        $('.form-control').each(function () {
+        $parentSelector.find('.form-control').each(function () {
             if ($(this).val() !== '') {
                 $(this).parents('.form-line').addClass('focused');
             }
