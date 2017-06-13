@@ -7,9 +7,6 @@
 /* Material Icons ============================== */
 @import 'materialicons';
 
-/* Helpers ===================================== */
-@import '_helpers.scss';
-
 /* Custom Animate ============================== */
 @import '_customanimate.scss';
 
@@ -177,3 +174,6 @@
 
 /* For Internet Explorer 11 ===================== */
 @import 'browser-support/_ie11.scss';
+
+/* Helpers ===================================== */
+@import '_helpers.scss';
