@@ -4,6 +4,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.20);
     position: relative;
     margin-bottom: 30px;
+    @include border-radius(2px);
 
     .card-inside-title {
         margin-top: 25px;
