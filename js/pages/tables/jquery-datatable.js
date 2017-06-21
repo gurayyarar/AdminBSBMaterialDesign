@@ -3,12 +3,19 @@ $(function () {
         responsive: true
     });
 
-    //Exportable table
+    //Exportable table    
     $('.js-exportable').DataTable({
-        dom: 'Bfrtip',
-        responsive: true,
+        "bAutoWidth": false,
+        "bScrollCollapse": true,
+        "bProcessing": true,
+        deferRender: true,
+        dom: 'Bfrtlip',
+        "responsive": true,
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
     });
+
+    $('.js-exportable').wrap('<div class="dataTables_scroll" />');
+    $('.js-basic-example').wrap('<div class="dataTables_scroll" />');
 });
