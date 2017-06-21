@@ -2,11 +2,11 @@ $(function () {
     skinChanger();
     activateNotificationAndTasksScroll();
 
-    setSkinListHeightAndScroll();
-    setSettingListHeightAndScroll();
+    setSkinListHeightAndScroll(true);
+    setSettingListHeightAndScroll(true);
     $(window).resize(function () {
-        setSkinListHeightAndScroll();
-        setSettingListHeightAndScroll();
+        setSkinListHeightAndScroll(false);
+        setSettingListHeightAndScroll(false);
     });
 });
 
@@ -26,17 +26,19 @@ function skinChanger() {
 }
 
 //Skin tab content set height and show scroll
-function setSkinListHeightAndScroll() {
+function setSkinListHeightAndScroll(isFirstTime) {
     var height = $(window).height() - ($('.navbar').innerHeight() + $('.right-sidebar .nav-tabs').outerHeight());
     var $el = $('.demo-choose-skin');
 
-    $el.slimScroll({ destroy: true }).height('auto');
-    $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    if (!isFirstTime){
+      $el.slimScroll({ destroy: true }).height('auto');
+      $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    }
 
     $el.slimscroll({
         height: height + 'px',
         color: 'rgba(0,0,0,0.5)',
-        size: '4px',
+        size: '6px',
         alwaysVisible: false,
         borderRadius: '0',
         railBorderRadius: '0'
@@ -44,17 +46,19 @@ function setSkinListHeightAndScroll() {
 }
 
 //Setting tab content set height and show scroll
-function setSettingListHeightAndScroll() {
+function setSettingListHeightAndScroll(isFirstTime) {
     var height = $(window).height() - ($('.navbar').innerHeight() + $('.right-sidebar .nav-tabs').outerHeight());
     var $el = $('.right-sidebar .demo-settings');
 
-    $el.slimScroll({ destroy: true }).height('auto');
-    $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    if (!isFirstTime){
+      $el.slimScroll({ destroy: true }).height('auto');
+      $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    }
 
     $el.slimscroll({
         height: height + 'px',
         color: 'rgba(0,0,0,0.5)',
-        size: '4px',
+        size: '6px',
         alwaysVisible: false,
         borderRadius: '0',
         railBorderRadius: '0'
