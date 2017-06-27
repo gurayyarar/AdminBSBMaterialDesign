@@ -2121,6 +2121,11 @@
   margin-right: 5px;
   margin-bottom: 12px; }
 
+.icon-and-text-button-demo button {
+  margin-right: 5px;
+  margin-bottom: 12px;
+  width: 16.66666666666667%; }
+
 .button-demo ul {
   padding-left: 0; }
   .button-demo ul li {
@@ -2493,6 +2498,10 @@ section.content {
     font-size: 20px;
     position: relative;
     top: 3px; }
+  .btn:not(.btn-link):not(.btn-circle) span {
+    position: relative;
+    top: -2px;
+    margin-left: 3px; }
 
 .btn-warning,
 .btn-warning:hover,
