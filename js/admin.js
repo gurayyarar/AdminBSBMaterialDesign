@@ -97,10 +97,10 @@ $.AdminBSB.leftSideBar = {
 
         //Set menu height
         _this.setMenuHeight();
-        _this.checkStatuForResize(true);
+        _this.checkStatusForResize(true);
         $(window).resize(function () {
             _this.setMenuHeight();
-            _this.checkStatuForResize(false);
+            _this.checkStatusForResize(false);
         });
 
         //Set Waves
@@ -129,7 +129,7 @@ $.AdminBSB.leftSideBar = {
             }
         }
     },
-    checkStatuForResize: function (firstTime) {
+    checkStatusForResize: function (firstTime) {
         var $body = $('body');
         var $openCloseBar = $('.navbar .navbar-header .bars');
         var width = $body.width();
