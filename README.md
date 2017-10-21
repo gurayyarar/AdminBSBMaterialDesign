@@ -7,9 +7,9 @@ AdminBSB - Material Design
 
 It's really easy to customize and usage. You can use for from 320px to large resolution pixels of new generation screens and mobile devices. (**Fully Responsive Material Design**)
 
-Looking for Premium Templates or Make Donation?
+Looking for Premium Templates?
 ----------------
-**If you need more features or if you want to make donation with buying template, please visit portfolio of mine which page link is [https://themeforest.net/user/gurayyarar/portfolio](http://bit.ly/2oPFpmQ)**
+**If you need more features please visit portfolio of mine which page link is [https://themeforest.net/user/gurayyarar/portfolio](http://bit.ly/2oPFpmQ)**
 
 Demo
 ----------------
@@ -72,4 +72,4 @@ Donations
 ----------
 Donations are **greatly appreciated!**
 
-**[DONATE WITH BUY PREMIUM TEMPLATE](http://bit.ly/2oPFpmQ)**
+**[BUY ME A COFFEE](http://bit.ly/2yEjtx5)**
