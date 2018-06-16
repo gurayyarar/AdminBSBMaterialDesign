@@ -271,7 +271,7 @@ $.AdminBSB.input = {
     activate: function () {
         //On focus event
         $('.form-control').focus(function () {
-            $(this).parent().addClass('focused');
+            $(this).closest('.form-line').addClass('focused');
         });
 
         //On focusout event
