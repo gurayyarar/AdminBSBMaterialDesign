@@ -96,10 +96,10 @@ $.AdminBSB.leftSideBar = {
         });
 
         //Set menu height
-        _this.setMenuHeight();
+        _this.setMenuHeight(true);
         _this.checkStatuForResize(true);
         $(window).resize(function () {
-            _this.setMenuHeight();
+            _this.setMenuHeight(false);
             _this.checkStatuForResize(false);
         });
 
@@ -112,6 +112,12 @@ $.AdminBSB.leftSideBar = {
             var configs = $.AdminBSB.options.leftSideBar;
             var height = ($(window).height() - ($('.legal').outerHeight() + $('.user-info').outerHeight() + $('.navbar').innerHeight()));
             var $el = $('.list');
+
+            if(!isFirstTime) {
+                $el.slimscroll({
+                    destroy: true
+                });
+            }
 
             $el.slimscroll({
                 height: height + "px",
