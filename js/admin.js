@@ -273,7 +273,7 @@ $.AdminBSB.input = {
 
         //On focus event
         $parentSelector.find('.form-control').focus(function () {
-            $(this).parent().addClass('focused');
+            $(this).closest('.form-line').addClass('focused');
         });
 
         //On focusout event
