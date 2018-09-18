@@ -5096,7 +5096,8 @@ section.content {
       -moz-transition: 0.2s;
       -o-transition: 0.2s;
       -webkit-transition: 0.2s;
-      transition: 0.2s; }
+      transition: 0.2s;
+      z-index: 5; }
   .form-group .form-line.error:after {
     border-bottom: 2px solid #F44336; }
   .form-group .form-line.success:after {
