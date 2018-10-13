@@ -6036,8 +6036,9 @@ fieldset[disabled] .form-control {
   margin-left: 5px;
   cursor: pointer; }
 
-a.dropdown-toggle.no-caret:before, a.dropdown-toggle.no-caret:after {
-  display:none;
+a.dropdown-toggle::before, a.dropdown-toggle::after {
+  content: none;
+  display: none;
 }
 a:not([href]):not([tabindex]),
 a:not([href]):not([tabindex]):hover,
