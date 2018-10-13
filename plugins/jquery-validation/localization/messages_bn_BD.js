@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "অনুগ্রহ করে {0} বা তার চাইতে কম মান ব্যবহার করুন।" ),
 	min: $.validator.format( "অনুগ্রহ করে {0} বা তার চাইতে বেশি মান ব্যবহার করুন।" )
 } );
-
+return $;
 }));

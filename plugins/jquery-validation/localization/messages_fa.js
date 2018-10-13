@@ -34,5 +34,5 @@ $.extend( $.validator.messages, {
 	minWords: $.validator.format( "لطفا حداقل {0} کلمه وارد کنید." ),
 	maxWords: $.validator.format( "لطفا حداکثر {0} کلمه وارد کنید." )
 } );
-
+return $;
 }));

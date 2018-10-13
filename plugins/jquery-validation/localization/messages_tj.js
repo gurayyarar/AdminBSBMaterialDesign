@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Илтимос, бештар аз {0} рақам ворид накунед." ),
 	min: $.validator.format( "Илтимос, камтар аз {0} рақам ворид накунед." )
 } );
-
+return $;
 }));
