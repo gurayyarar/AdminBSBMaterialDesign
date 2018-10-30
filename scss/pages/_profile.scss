@@ -1,0 +1,193 @@
+﻿.profile-card {
+    .profile-header {
+        background-color: #ad1455;
+        padding: 42px 0;
+    }
+
+    .profile-body {
+        .image-area {
+            text-align: center;
+            margin-top: -64px;
+
+            img {
+                border: 2px solid #ad1455;
+                padding: 2px;
+                margin: 2px;
+                @include border-radius(50%);
+            }
+        }
+
+        .content-area {
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+
+            p {
+                margin-bottom: 0;
+
+                &:last-child {
+                    font-weight: 600;
+                    color: #ad1455;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    .profile-footer {
+        padding: 15px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                border-bottom: 1px solid #eee;
+                padding: 10px 0;
+
+                &:last-child {
+                    border-bottom: none;
+                    margin-bottom: 15px;
+                }
+
+                span {
+                    &:first-child {
+                        font-weight: bold;
+                    }
+
+                    &:last-child {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-about-me {
+    .body {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                border-bottom: 1px solid #eee;
+                margin-bottom: 10px;
+                padding-bottom: 15px;
+
+                &:last-child {
+                    border: none;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+
+                .title {
+                    font-weight: bold;
+                    color: #666;
+
+                    i {
+                        margin-right: 2px;
+                        position: relative;
+                        top: 7px;
+                    }
+                }
+
+                .content {
+                    margin-top: 10px;
+                    color: #999;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.panel-post {
+    @include border-radius(0);
+
+    .panel-heading {
+        background-color: #fff;
+        @include border-radius(0);
+
+        .media {
+            margin-bottom: 0;
+
+            a {
+                img {
+                    width: 42px;
+                    @include border-radius(50%);
+                }
+            }
+
+            .media-body {
+                padding-top: 5px;
+
+                h4 {
+                    font-size: 14px;
+
+                    a {
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+
+    .panel-body {
+        padding: 0;
+
+        .post {
+            .post-heading {
+                padding: 12px 15px;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .panel-footer {
+        background-color: #fff;
+        border: none;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-right: 12px;
+
+                &:last-child {
+                    float: right;
+                    margin-right: 0;
+                }
+
+                a {
+                    color: #777;
+                    text-decoration: none;
+
+                    i {
+                        font-size: 16px;
+                        position: relative;
+                        top: 4px;
+                        margin-right: 2px;
+                    }
+
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .form-group {
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+    }
+}

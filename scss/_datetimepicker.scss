@@ -44,3 +44,83 @@
         }
     }
 }
+
+.datepicker {
+    &.datepicker-dropdown {
+        &.dropdown-menu {
+            margin-top: 0 !important;
+        }
+    }
+
+    table {
+        tr {
+            td {
+                &.active {
+                    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($datepicker-active-color), to($datepicker-active-color));
+                    background-image: -webkit-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                    background-image: -o-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                    background-image: linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                    border: none;
+
+                    &:hover {
+                        &.active {
+                            background-image: -webkit-gradient(linear, 0 0, 0 100%, from($datepicker-active-color), to($datepicker-active-color));
+                            background-image: -webkit-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                            background-image: -o-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                            background-image: linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                            border: none;
+                        }
+                    }
+                }
+
+                &.selected {
+                    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($datepicker-active-color), to($datepicker-active-color));
+                    background-image: -webkit-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                    background-image: -o-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                    background-image: linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                    border: none;
+                }
+
+                span {
+                    &.active {
+                        background-image: -webkit-gradient(linear, 0 0, 0 100%, from($datepicker-active-color), to($datepicker-active-color));
+                        background-image: -webkit-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                        background-image: -o-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                        background-image: linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                        border: none;
+
+                        &:hover {
+                            &.active {
+                                background-image: -webkit-gradient(linear, 0 0, 0 100%, from($datepicker-active-color), to($datepicker-active-color));
+                                background-image: -webkit-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                                background-image: -o-linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                                background-image: linear-gradient(to bottom, $datepicker-active-color, $datepicker-active-color);
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.table-condensed {
+            > tbody {
+                > tr {
+                    > td {
+                        padding: 6px 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.input-daterange {
+    .form-control {
+        text-align: left;
+    }
+
+    .input-group-addon {
+        padding-right: 10px !important;
+    }
+}

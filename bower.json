@@ -1,6 +1,6 @@
 {
   "name": "adminbsb-materialdesign",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "AdminBSB - Free admin panel that is based on Bootstrap 3.x with Material Design",
   "main": "js/admin.js",
   "authors": [

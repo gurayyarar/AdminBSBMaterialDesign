@@ -4023,6 +4023,51 @@ section.content {
   background: #007d72;
   color: #fff; }
 
+.datepicker.datepicker-dropdown.dropdown-menu {
+  margin-top: 0 !important; }
+
+.datepicker table tr td.active {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#009688), to(#009688));
+  background-image: -webkit-linear-gradient(to bottom, #009688, #009688);
+  background-image: -o-linear-gradient(to bottom, #009688, #009688);
+  background-image: linear-gradient(to bottom, #009688, #009688);
+  border: none; }
+  .datepicker table tr td.active:hover.active {
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#009688), to(#009688));
+    background-image: -webkit-linear-gradient(to bottom, #009688, #009688);
+    background-image: -o-linear-gradient(to bottom, #009688, #009688);
+    background-image: linear-gradient(to bottom, #009688, #009688);
+    border: none; }
+
+.datepicker table tr td.selected {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#009688), to(#009688));
+  background-image: -webkit-linear-gradient(to bottom, #009688, #009688);
+  background-image: -o-linear-gradient(to bottom, #009688, #009688);
+  background-image: linear-gradient(to bottom, #009688, #009688);
+  border: none; }
+
+.datepicker table tr td span.active {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#009688), to(#009688));
+  background-image: -webkit-linear-gradient(to bottom, #009688, #009688);
+  background-image: -o-linear-gradient(to bottom, #009688, #009688);
+  background-image: linear-gradient(to bottom, #009688, #009688);
+  border: none; }
+  .datepicker table tr td span.active:hover.active {
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#009688), to(#009688));
+    background-image: -webkit-linear-gradient(to bottom, #009688, #009688);
+    background-image: -o-linear-gradient(to bottom, #009688, #009688);
+    background-image: linear-gradient(to bottom, #009688, #009688);
+    border: none; }
+
+.datepicker table.table-condensed > tbody > tr > td {
+  padding: 6px 9px; }
+
+.input-daterange .form-control {
+  text-align: left; }
+
+.input-daterange .input-group-addon {
+  padding-right: 10px !important; }
+
 /* Bootstrap Select ============================ */
 .bootstrap-select {
   box-shadow: none !important;
@@ -7838,6 +7883,133 @@ fieldset[disabled] .form-control {
   .five-zero-zero .five-zero-zero-container .button-place {
     margin-top: 32px; }
 
+/* Profile Page ================================ */
+.profile-card .profile-header {
+  background-color: #ad1455;
+  padding: 42px 0; }
+
+.profile-card .profile-body .image-area {
+  text-align: center;
+  margin-top: -64px; }
+  .profile-card .profile-body .image-area img {
+    border: 2px solid #ad1455;
+    padding: 2px;
+    margin: 2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+
+.profile-card .profile-body .content-area {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px; }
+  .profile-card .profile-body .content-area p {
+    margin-bottom: 0; }
+    .profile-card .profile-body .content-area p:last-child {
+      font-weight: 600;
+      color: #ad1455;
+      margin-top: 5px; }
+
+.profile-card .profile-footer {
+  padding: 15px; }
+  .profile-card .profile-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .profile-card .profile-footer ul li {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0; }
+      .profile-card .profile-footer ul li:last-child {
+        border-bottom: none;
+        margin-bottom: 15px; }
+      .profile-card .profile-footer ul li span:first-child {
+        font-weight: bold; }
+      .profile-card .profile-footer ul li span:last-child {
+        float: right; }
+
+.card-about-me .body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .card-about-me .body ul li {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 15px; }
+    .card-about-me .body ul li:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    .card-about-me .body ul li .title {
+      font-weight: bold;
+      color: #666; }
+      .card-about-me .body ul li .title i {
+        margin-right: 2px;
+        position: relative;
+        top: 7px; }
+    .card-about-me .body ul li .content {
+      margin-top: 10px;
+      color: #999;
+      font-size: 13px; }
+
+.panel-post {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+  .panel-post .panel-heading {
+    background-color: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+    .panel-post .panel-heading .media {
+      margin-bottom: 0; }
+      .panel-post .panel-heading .media a img {
+        width: 42px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+      .panel-post .panel-heading .media .media-body {
+        padding-top: 5px; }
+        .panel-post .panel-heading .media .media-body h4 {
+          font-size: 14px; }
+          .panel-post .panel-heading .media .media-body h4 a {
+            color: #666; }
+  .panel-post .panel-body {
+    padding: 0; }
+    .panel-post .panel-body .post .post-heading {
+      padding: 12px 15px; }
+      .panel-post .panel-body .post .post-heading p {
+        margin-bottom: 0; }
+  .panel-post .panel-footer {
+    background-color: #fff;
+    border: none; }
+    .panel-post .panel-footer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .panel-post .panel-footer ul li {
+        display: inline-block;
+        margin-right: 12px; }
+        .panel-post .panel-footer ul li:last-child {
+          float: right;
+          margin-right: 0; }
+        .panel-post .panel-footer ul li a {
+          color: #777;
+          text-decoration: none; }
+          .panel-post .panel-footer ul li a i {
+            font-size: 16px;
+            position: relative;
+            top: 4px;
+            margin-right: 2px; }
+          .panel-post .panel-footer ul li a span {
+            font-size: 13px; }
+    .panel-post .panel-footer .form-group {
+      margin-bottom: 5px;
+      margin-top: 20px; }
+
 /* Maps ======================================== */
 /* Google Maps */
 .gmap {
@@ -8039,4 +8211,3 @@ html.ie11 .dropdown-menu ul.menu li a {
 
 html.ie11 .bs-searchbox .form-control {
   width: 90%; }
-
