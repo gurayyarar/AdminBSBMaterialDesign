@@ -200,10 +200,10 @@ $.AdminBSB.rightSideBar = {
 *  You can manage the search bar
 *  
 */
-var $searchBar = $('.search-bar');
 $.AdminBSB.search = {
     activate: function () {
         var _this = this;
+        _this.searchBar = $('.search-bar');
 
         //Search button click event
         $('.js-search').on('click', function () {
@@ -211,24 +211,24 @@ $.AdminBSB.search = {
         });
 
         //Close search click event
-        $searchBar.find('.close-search').on('click', function () {
+        _this.searchBar.find('.close-search').on('click', function () {
             _this.hideSearchBar();
         });
 
         //ESC key on pressed
-        $searchBar.find('input[type="text"]').on('keyup', function (e) {
+        _this.searchBar.find('input[type="text"]').on('keyup', function (e) {
             if (e.keyCode == 27) {
                 _this.hideSearchBar();
             }
         });
     },
     showSearchBar: function () {
-        $searchBar.addClass('open');
-        $searchBar.find('input[type="text"]').focus();
+        this.searchBar.addClass('open');
+        this.searchBar.find('input[type="text"]').focus();
     },
     hideSearchBar: function () {
-        $searchBar.removeClass('open');
-        $searchBar.find('input[type="text"]').val('');
+        this.searchBar.removeClass('open');
+        this.searchBar.find('input[type="text"]').val('');
     }
 }
 //==========================================================================================================================
