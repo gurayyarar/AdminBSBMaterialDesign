@@ -2,7 +2,7 @@
 @import '_variables';
 
 /* Navbar ====================================== */
-@import '_navbar';
+@import '_navbar.scss';
 
 /* Material Icons ============================== */
 @import 'materialicons';
@@ -126,9 +126,6 @@
 
 /* Preloaders ================================== */
 @import '_preloaders.scss';
-
-/* Navbars ===================================== */
-@import '_navbar.scss';
 
 /* Dropdown Menu =============================== */
 @import '_dropdownmenu.scss';
