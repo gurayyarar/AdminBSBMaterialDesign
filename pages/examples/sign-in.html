@@ -23,6 +23,7 @@
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
 </head>
 
 <body class="login-page">
@@ -35,36 +36,41 @@
             <div class="body">
                 <form id="sign_in" method="POST">
                     <div class="msg">Sign in to start your session</div>
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <i class="material-icons">person</i>
+                    <div class="input-group form-group form-float">
+                        <span class="input-group-prepend">
+                            <i class="material-icons">mail_outline</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+                            <input id="email" type="email" class="form-control" name="email" required autofocus>
+                            <label class="form-label" for="email">Email address</label>
                         </div>
                     </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <i class="material-icons">lock</i>
+
+                    <div class="input-group form-group form-float">
+                        <span class="input-group-prepend">
+                            <i class="material-icons">lock_outline</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            <input type="password" id="password" class="form-control" name="password" required>
+                            <label class="form-label" for="password">Password</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-8 p-t-5">
+
+                    <div class="form-row">
+                        <div class="col-8 p-t-5">
                             <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
                             <label for="rememberme">Remember Me</label>
                         </div>
-                        <div class="col-xs-4">
+                        <div class="col-4">
                             <button class="btn btn-block bg-pink waves-effect" type="submit">SIGN IN</button>
                         </div>
                     </div>
-                    <div class="row m-t-15 m-b--20">
-                        <div class="col-xs-6">
+
+                    <div class="row m-t-15">
+                        <div class="col-6">
                             <a href="sign-up.html">Register Now!</a>
                         </div>
-                        <div class="col-xs-6 align-right">
+                        <div class="col-6 align-right">
                             <a href="forgot-password.html">Forgot Password?</a>
                         </div>
                     </div>
@@ -84,6 +90,7 @@
 
     <!-- Validation Plugin Js -->
     <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
+    <script src="../../plugins/jquery-validation/additional-methods.js"></script>
 
     <!-- Custom Js -->
     <script src="../../js/admin.js"></script>

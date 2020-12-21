@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Te rugăm să introduci o valoare egal sau mai mică decât {0}." ),
 	min: $.validator.format( "Te rugăm să introduci o valoare egal sau mai mare decât {0}." )
 } );
-
+return $;
 }));

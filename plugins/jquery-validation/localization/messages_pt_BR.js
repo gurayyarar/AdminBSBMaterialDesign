@@ -32,6 +32,7 @@ $.extend( $.validator.messages, {
 	range: $.validator.format( "Por favor, forne&ccedil;a um valor entre {0} e {1}." ),
 	max: $.validator.format( "Por favor, forne&ccedil;a um valor menor ou igual a {0}." ),
 	min: $.validator.format( "Por favor, forne&ccedil;a um valor maior ou igual a {0}." ),
+	step: $.validator.format( "Por favor, forne&ccedil;a um valor m&acute;tiplo de {0}." ),
 
 	// Metodos Adicionais
 	maxWords: $.validator.format( "Por favor, forne&ccedil;a com {0} palavras ou menos." ),
@@ -83,5 +84,5 @@ $.extend( $.validator.messages, {
 	ziprange: "O c&oacute;digo postal deve estar entre 902xx-xxxx e 905xx-xxxx",
 	cpfBR: "Por favor, forne&ccedil;a um CPF v&aacute;lido."
 } );
-
+return $;
 }));

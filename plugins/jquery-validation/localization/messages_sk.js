@@ -28,5 +28,5 @@ $.extend( $.validator.messages, {
 	min: $.validator.format( "Nemôže byť menej ako {0}." ),
 	creditcard: "Číslo platobnej karty musí byť platné."
 } );
-
+return $;
 }));

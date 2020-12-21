@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "გთხოვთ შეიყვანოთ ციფრი რომელიც ნაკლებია ან უდრის {0}-ს." ),
 	min: $.validator.format( "გთხოვთ შეიყვანოთ ციფრი რომელიც მეტია ან უდრის {0}-ს." )
 } );
-
+return $;
 }));

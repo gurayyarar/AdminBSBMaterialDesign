@@ -29,5 +29,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Sy&ouml;t&auml; arvo, joka on enint&auml;&auml;n {0}." ),
 	min: $.validator.format( "Sy&ouml;t&auml; arvo, joka on v&auml;hint&auml;&auml;n {0}." )
 } );
-
+return $;
 }));

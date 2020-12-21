@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "โปรดระบุค่าน้อยกว่าหรือเท่ากับ {0}" ),
 	min: $.validator.format( "โปรดระบุค่ามากกว่าหรือเท่ากับ {0}" )
 } );
-
+return $;
 }));

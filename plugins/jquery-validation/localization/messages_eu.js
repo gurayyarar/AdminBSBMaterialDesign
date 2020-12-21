@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Mesedez, idatzi {0} edo txikiagoa den balio bat." ),
 	min: $.validator.format( "Mesedez, idatzi {0} edo handiagoa den balio bat." )
 } );
-
+return $;
 }));
