@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Παρακαλώ εισάγετε μια τιμή μικρότερη ή ίση του {0}." ),
 	min: $.validator.format( "Παρακαλώ εισάγετε μια τιμή μεγαλύτερη ή ίση του {0}." )
 } );
-
+return $;
 }));

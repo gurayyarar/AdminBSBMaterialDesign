@@ -28,5 +28,5 @@ $.extend( $.validator.messages, {
 	min: $.validator.format( "Angiv en værdi der mindst er {0}." ),
 	creditcard: "Indtast et gyldigt kreditkortnummer."
 } );
-
+return $;
 }));

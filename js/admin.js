@@ -29,11 +29,11 @@ $.AdminBSB.options = {
     },
     leftSideBar: {
         scrollColor: 'rgba(0,0,0,0.5)',
-        scrollWidth: '4px',
+        scrollWidth: '8px',
         scrollAlwaysVisible: false,
-        scrollBorderRadius: '0',
+        scrollBorderRadius: '5px',
         scrollRailBorderRadius: '0',
-        scrollActiveItemWhenPageLoad: true,
+        scrollActiveItemWhenPageLoad: false,
         breakpointWidth: 1170
     },
     dropdownMenu: {
@@ -44,7 +44,7 @@ $.AdminBSB.options = {
 
 /* Left Sidebar - Function =================================================================================================
 *  You can manage the left sidebar menu options
-*  
+*
 */
 $.AdminBSB.leftSideBar = {
     activate: function () {
@@ -166,7 +166,7 @@ $.AdminBSB.leftSideBar = {
 
 /* Right Sidebar - Function ================================================================================================
 *  You can manage the right sidebar menu options
-*  
+*
 */
 $.AdminBSB.rightSideBar = {
     activate: function () {
@@ -177,12 +177,19 @@ $.AdminBSB.rightSideBar = {
         //Close sidebar
         $(window).click(function (e) {
             var $target = $(e.target);
-            if (e.target.nodeName.toLowerCase() === 'i') { $target = $(e.target).parent(); }
+            if (e.target.nodeName.toLowerCase() === 'i') {
+                $target = $target.parent();
+            }
 
             if (!$target.hasClass('js-right-sidebar') && _this.isOpen() && $target.parents('#rightsidebar').length === 0) {
                 if (!$target.hasClass('bars')) $overlay.fadeOut();
                 $sidebar.removeClass('open');
             }
+        });
+        //Close sidebar if dropdown toggle buttons are pushed (since they stopPropagation)
+        $("a.dropdown-toggle").click(function() {
+            $overlay.fadeOut();
+            $sidebar.removeClass('open');
         });
 
         $('.js-right-sidebar').on('click', function () {
@@ -198,7 +205,7 @@ $.AdminBSB.rightSideBar = {
 
 /* Searchbar - Function ================================================================================================
 *  You can manage the search bar
-*  
+*
 */
 var $searchBar = $('.search-bar');
 $.AdminBSB.search = {
@@ -209,6 +216,12 @@ $.AdminBSB.search = {
         $('.js-search').on('click', function () {
             _this.showSearchBar();
         });
+    },
+    showSearchBar: function () {
+        var _this = this;
+
+        $searchBar.addClass('open');
+        $searchBar.find('input[type="text"]').focus();
 
         //Close search click event
         $searchBar.find('.close-search').on('click', function () {
@@ -216,15 +229,12 @@ $.AdminBSB.search = {
         });
 
         //ESC key on pressed
-        $searchBar.find('input[type="text"]').on('keyup', function (e) {
+        $(document).on('keyup.myevent', function (e) {
             if (e.keyCode == 27) {
                 _this.hideSearchBar();
+                $(this).off('keyup.myevent')
             }
         });
-    },
-    showSearchBar: function () {
-        $searchBar.addClass('open');
-        $searchBar.find('input[type="text"]').focus();
     },
     hideSearchBar: function () {
         $searchBar.removeClass('open');
@@ -235,7 +245,7 @@ $.AdminBSB.search = {
 
 /* Navbar - Function =======================================================================================================
 *  You can manage the navbar
-*  
+*
 */
 $.AdminBSB.navbar = {
     activate: function () {
@@ -265,7 +275,7 @@ $.AdminBSB.navbar = {
 
 /* Input - Function ========================================================================================================
 *  You can manage the inputs(also textareas) with name of class 'form-control'
-*  
+*
 */
 $.AdminBSB.input = {
     activate: function ($parentSelector) {
@@ -274,6 +284,13 @@ $.AdminBSB.input = {
         //On focus event
         $parentSelector.find('.form-control').focus(function () {
             $(this).closest('.form-line').addClass('focused');
+        });
+
+        // On change event. This makes the app work well with Lastpass.
+        $parentSelector.find('.form-control').change(function () {
+            if ($(this).val() != '') {
+                $(this).trigger('focus');
+            }
         });
 
         //On focusout event
@@ -304,7 +321,7 @@ $.AdminBSB.input = {
 
 /* Form - Select - Function ================================================================================================
 *  You can manage the 'select' of form elements
-*  
+*
 */
 $.AdminBSB.select = {
     activate: function () {
@@ -315,7 +332,7 @@ $.AdminBSB.select = {
 
 /* DropdownMenu - Function =================================================================================================
 *  You can manage the dropdown menu
-*  
+*
 */
 
 $.AdminBSB.dropdownMenu = {
@@ -339,7 +356,8 @@ $.AdminBSB.dropdownMenu = {
                     e.preventDefault();
                     _this.dropdownEffectStart(dropdown, dropdown.effectOut);
                     _this.dropdownEffectEnd(dropdown, function () {
-                        dropdown.dropdown.removeClass('open');
+                        dropdown.dropdown.removeClass('show');
+                        dropdown.dropdownMenu.removeClass('show');
                     });
                 }
             }
@@ -393,7 +411,7 @@ $.AdminBSB.dropdownMenu = {
 
 /* Browser - Function ======================================================================================================
 *  You can manage browser
-*  
+*
 */
 var edge = 'Microsoft Edge';
 var ie10 = 'Internet Explorer 10';

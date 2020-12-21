@@ -36,5 +36,5 @@
 		cifES: "Por favor, escribe un CIF válido."
 	} );
 }( jQuery ) );
-
+return $;
 }));

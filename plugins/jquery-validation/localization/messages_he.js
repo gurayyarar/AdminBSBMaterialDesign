@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "נא למלא ערך קטן או שווה ל- {0}" ),
 	min: $.validator.format( "נא למלא ערך גדול או שווה ל- {0}" )
 } );
-
+return $;
 }));

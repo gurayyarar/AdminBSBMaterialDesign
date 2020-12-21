@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "{0} аз немесе тең санын енгізуіңіді сұраймыз." ),
 	min: $.validator.format( "{0} көп немесе тең санын енгізуіңізді сұраймыз." )
 } );
-
+return $;
 }));

@@ -31,5 +31,5 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Hãy nhập từ {0} trở xuống." ),
 	min: $.validator.format( "Hãy nhập từ {1} trở lên." )
 } );
-
+return $;
 }));
