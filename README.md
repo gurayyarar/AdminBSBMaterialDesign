@@ -5,7 +5,7 @@ AdminBSB - Material Design
 
 **AdminBSB - Material Design is a fully responsive and free admin template.** It was developed with [Bootstrap 3.x Framework](http://getbootstrap.com) and [Google Material Design](https://material.google.com) of powers.
 
-It's really easy to customize and usage. You can use for from 320px to large resolution pixels of new generation screens and mobile devices. (**Fully Responsive Material Design**)
+It's really easy to customize and use. You can use from 320px to larger resolution pixels on new generation screens and mobile devices. (**Fully Responsive Material Design**)
 
 Looking for Premium Templates?
 ----------------
