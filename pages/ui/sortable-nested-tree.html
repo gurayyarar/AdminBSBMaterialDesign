@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Progress Bars | Bootstrap Based Admin Template - Material Design</title>
+    <title>Nested Sortable Tree | Bootstrap Based Admin Template - Material Design</title>
     <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
@@ -20,6 +20,9 @@
 
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Bootstrap Nested Sortable Tree Css -->
+    <link href="../../plugins/BsNestedSortable/BsNestedSortable.min.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
@@ -415,7 +418,7 @@
                             <li>
                                 <a href="../../pages/ui/preloaders.html">Preloaders</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="../../pages/ui/progressbars.html">Progress Bars</a>
                             </li>
                             <li>
@@ -423,6 +426,9 @@
                             </li>
                             <li>
                                 <a href="../../pages/ui/sortable-nestable.html">Sortable & Nestable</a>
+                            </li>
+                            <li class="active">
+                                <a href="../../pages/ui/sortable-nested-tree.html">Sortable Nested Tree</a>
                             </li>
                             <li>
                                 <a href="../../pages/ui/sortable-nested-tree.html">Sortable Nested Tree</a>
@@ -797,16 +803,17 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>PROGRESS BARS</h2>
+                <h2>
+                    Bootstrap Nested Sortable Tree
+                    <small>Taken by <a href="https://github.com/karamelikli/BsNestedSortable" target="_blank">github.com/karamelikli/BsNestedSortable</a></small>
+                </h2>
             </div>
-            <!-- Basic Examples -->
+            <!-- Draggable Handles -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>
-                                BASIC EXAMPLES
-                            </h2>
+                        
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -821,267 +828,135 @@
                             </ul>
                         </div>
                         <div class="body">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                    <span class="sr-only">60% Complete</span>
+                            <div class="clearfix m-b-20">
+                                <div class="dd ">
+                                    <ul id="tree" style="width: 100%"></ul>
                                 </div>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                                    75%
+                            <b>Output JSON</b>
+                            <textarea cols="30" rows="3" id="outpuJson" class="form-control no-resize" ></textarea>
+                        </div>
+                        <div class="modal fade" id="proceeding-error" tabindex="-1" role="dialog" aria-labelledby="myEroorLabel">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content bg-danger text-white">
+                                    <div class="modal-body text-center">
+                                        <h3 class="text-white mb-15" id="myEroorLabel"><i class="fa fa-exclamation-triangle"></i> ERROR!
+                                        </h3>
+                                        <span>proceeding Failed.</span>
+                                        <p id="errorDesc"></p>
+                                        <p></p>
+                                        <button type="button" class="btn btn-light close" data-dismiss="modal"
+                                                data-bs-dismiss="modal">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="modal hide fade" id="proceeding-modal">
+                            <div class="modal-dialog modal-dialog-centered " role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center">
+                                        <div class="loader">
+                                            <div class="fa-3x">
+                                                <i class="fas fa-circle-notch fa-spin" style="color:blue ;"></i>
+
+                                            </div>
+                                        </div>
+                                        <div class="loader-txt" id="proceedingLabel">
+                                            <p>Please wait while the server is proceeding.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">Custom sized Modal</h4>
+                                        <button type="button" class="close"    data-bs-dismiss="modal"  data-dismiss="modal" aria-label="Close"><i
+                                                class="bi bi-x-lg"></i></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="test"></div>
+                                        <input type="hidden" id="parentOfThis" />
+                                        <input type="hidden" id="IsAddItem" />
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control validate[required,minSize[2],maxSize[20]]" id="CatName"
+                                                   placeholder="Item name" data-prompt-position="topLeft">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="summernote" name="CatDesc" id="CatDescId"
+                                                      style="min-width: 100%;height: 10rem;" placeholder="Item description"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="custom-file">
+                                                    <input type="text" class="form-control" id="image" placeholder="Item image"
+                                                           data-prompt-position="topLeft">
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn btn-primary submit" data-dismiss="modal" data-bs-dismiss="modal">OK</button>
+                                        <button type="button" class="btn btn-orange close" data-dismiss="modal" data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="myModalDelete" class="modal fade" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Confirmation</h5>
+                                        <button type="button" class="btn-close" data-dismiss="modal"  data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <input type="hidden" id="IdOfDelete" />
+                                        <div class="text-center fs-1"><i class="bi bi-x-octagon" style="color:red"></i></div>
+                                        <p>Do you want to delete This Branch?</p>
+                                        <p class="text-secondary"><small>If you don't save, your changes will be lost.</small></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary close" data-dismiss="modal"  data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary Delete">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="myModalDeleteAlert" class="modal fade" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Attention</h5>
+                                        <button type="button" class="btn-close" data-dismiss="modal"  data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <input type="hidden" id="IdOfDelete" />
+                                        <div class="text-center fs-1"><i class="bi bi-exclamation-triangle"
+                                                                         style="color: red;background-color: yellow;"></i></div>
+                                        <p>This branch has childeren!</p>
+                                        <p class="text-secondary"><small>You have to delete this branch' childeren first.</small></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary close" data-dismiss="modal" data-bs-dismiss="modal">OK</button>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- #END# Basic Examples -->
-            <!-- Contextual Alternatives -->
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                CONTEXTUAL ALTERNATIVES
-                                <small>Progress bars use some of the same button and alert classes for consistent styles.</small>
-                            </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                     style="width: 40%">
-                                    <span class="sr-only">40% Complete (success)</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                    <span class="sr-only">20% Complete</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                     style="width: 60%">
-                                    <span class="sr-only">60% Complete (warning)</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                     style="width: 80%">
-                                    <span class="sr-only">80% Complete (danger)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Contextual Alternatives -->
-            <!-- Striped -->
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                STRIPED
-                                <small>Uses a gradient to create a striped effect. Not available in IE9 and below.</small>
-                            </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 40%">
-                                    <span class="sr-only">40% Complete (success)</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 20%">
-                                    <span class="sr-only">20% Complete</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% Complete (warning)</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 80%">
-                                    <span class="sr-only">80% Complete (danger)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Striped -->
-            <!-- Animated -->
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                ANIMATED
-                                <small>Add <code>.active</code> to <code>.progress-bar-striped</code> to animate the stripes right to left. Not available in IE9 and below.</small>
-                            </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 40%">
-                                    <span class="sr-only">40% Complete (success)</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 20%">
-                                    <span class="sr-only">20% Complete</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% Complete (warning)</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 80%">
-                                    <span class="sr-only">80% Complete (danger)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Animated -->
-            <!-- Stacked -->
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                STACKED
-                                <small>Place multiple bars into the same <code>.progress</code> to stack them.</small>
-                            </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success" style="width: 35%">
-                                    <span class="sr-only">35% Complete (success)</span>
-                                </div>
-                                <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
-                                    <span class="sr-only">20% Complete (warning)</span>
-                                </div>
-                                <div class="progress-bar progress-bar-danger" style="width: 10%">
-                                    <span class="sr-only">10% Complete (danger)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Stacked -->
-            <!-- With Material Design Colors -->
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                WITH MATERIAL DESIGN COLORS
-                                <small>You can use material design color which examples are <code>.bg-pink, .bg-red</code> class</small>
-                            </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="progress">
-                                <div class="progress-bar bg-pink progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                     style="width: 40%">
-                                    PINK PROGRESS BAR
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-cyan progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                     style="width: 75%">
-                                    CYAN PROGRESS BAR
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-teal progress-bar-striped" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"
-                                     style="width: 32%">
-                                    TEAL PROGRESS BAR
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-orange progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 85%">
-                                    ORANGE PROGRESS BAR
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# With Material Design Colors -->
+            <!-- #END# Draggable Handles -->
         </div>
     </section>
 
@@ -1100,8 +975,13 @@
     <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
 
+    <!-- Nested Sortable Tree -->
+    <script src="../../plugins/BsNestedSortable/jquery-ui.js"></script>
+    <script src="../../plugins/BsNestedSortable/BsNestedSortable.min.js"></script>
+
     <!-- Custom Js -->
     <script src="../../js/admin.js"></script>
+    <script src="../../js/pages/ui/sortable-nested-tree.js"></script>
 
     <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
